@@ -1,0 +1,1426 @@
+{
+    "mimesis.compat": {},
+    "mimesis.decorators": {
+        "romanize": {
+            "locale": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "romanize.romanize_deco": {}
+    },
+    "mimesis.enums": {},
+    "mimesis.exceptions": {
+        "UnsupportedLocale.__init__": {
+            "locale": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            }
+        },
+        "UnsupportedLocale.__str__": {},
+        "UndefinedSchema.__str__": {},
+        "NonEnumerableError.__init__": {
+            "enum_obj": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "NonEnumerableError.__str__": {},
+        "UnsupportedField.__init__": {
+            "name": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            }
+        },
+        "UnsupportedField.__str__": {},
+        "UndefinedField.__str__": {},
+        "UnacceptableField.__str__": {}
+    },
+    "mimesis.locales": {},
+    "mimesis.random": {
+        "get_random_item": {
+            "enum": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "rnd": {
+                "value": "Optional[Random]",
+                "is_user_defined": true
+            }
+        },
+        "Random.randints": {
+            "amount": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "a": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "b": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Random.urandom": {
+            "args": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Random.generate_string": {
+            "str_seq": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "length": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Random.custom_code": {
+            "mask": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "char": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "digit": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Random.uniform": {
+            "a": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "b": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "precision": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Random.randstr": {
+            "unique": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "length": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            }
+        }
+    },
+    "mimesis.schema": {
+        "AbstractField.__init__": {
+            "locale": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "seed": {
+                "value": "Optional[Seed]",
+                "is_user_defined": false
+            },
+            "providers": {
+                "value": "Optional[Any]",
+                "is_user_defined": false
+            }
+        },
+        "AbstractField.__call__": {
+            "name": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            },
+            "key": {
+                "value": "Optional[Callable]",
+                "is_user_defined": false
+            }
+        },
+        "AbstractField.__str__": {},
+        "Schema.__init__": {
+            "schema": {
+                "value": "SchemaType",
+                "is_user_defined": false
+            }
+        },
+        "Schema.create": {
+            "iterations": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        }
+    },
+    "mimesis.shortcuts": {
+        "luhn_checksum": {
+            "num": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "mimesis.typing": {},
+    "mimesis": {},
+    "mimesis.builtins.base": {
+        "BaseSpecProvider.__init__": {}
+    },
+    "mimesis.builtins.da": {
+        "DenmarkSpecProvider.__init__": {
+            "seed": {
+                "value": "Seed",
+                "is_user_defined": false
+            }
+        },
+        "DenmarkSpecProvider.cpr": {}
+    },
+    "mimesis.builtins.de": {
+        "GermanySpecProvider.__init__": {
+            "seed": {
+                "value": "Seed",
+                "is_user_defined": false
+            }
+        },
+        "GermanySpecProvider.noun": {
+            "plural": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        }
+    },
+    "mimesis.builtins.en": {
+        "USASpecProvider.__init__": {
+            "seed": {
+                "value": "Seed",
+                "is_user_defined": false
+            }
+        },
+        "USASpecProvider.tracking_number": {
+            "service": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "USASpecProvider.ssn": {},
+        "USASpecProvider.personality": {
+            "category": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "mimesis.builtins.it": {
+        "ItalySpecProvider.__init__": {
+            "seed": {
+                "value": "Seed",
+                "is_user_defined": false
+            }
+        },
+        "ItalySpecProvider.fiscal_code": {
+            "gender": {
+                "value": "Optional[Gender]",
+                "is_user_defined": true
+            }
+        }
+    },
+    "mimesis.builtins.nl": {
+        "NetherlandsSpecProvider.__init__": {
+            "seed": {
+                "value": "Seed",
+                "is_user_defined": false
+            }
+        },
+        "NetherlandsSpecProvider.bsn": {},
+        "NetherlandsSpecProvider.burgerservicenummer": {}
+    },
+    "mimesis.builtins.pl": {
+        "PolandSpecProvider.__init__": {
+            "seed": {
+                "value": "Seed",
+                "is_user_defined": false
+            }
+        },
+        "PolandSpecProvider.nip": {},
+        "PolandSpecProvider.pesel": {
+            "birth_date": {
+                "value": "DateTime",
+                "is_user_defined": false
+            },
+            "gender": {
+                "value": "Gender",
+                "is_user_defined": true
+            }
+        },
+        "PolandSpecProvider.regon": {}
+    },
+    "mimesis.builtins.pt_br": {
+        "BrazilSpecProvider.__init__": {
+            "seed": {
+                "value": "Seed",
+                "is_user_defined": false
+            }
+        },
+        "BrazilSpecProvider.cpf": {
+            "with_mask": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "BrazilSpecProvider.cnpj": {
+            "with_mask": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        }
+    },
+    "mimesis.builtins.ru": {
+        "RussiaSpecProvider.__init__": {
+            "seed": {
+                "value": "Seed",
+                "is_user_defined": false
+            }
+        },
+        "RussiaSpecProvider.generate_sentence": {},
+        "RussiaSpecProvider.patronymic": {
+            "gender": {
+                "value": "Gender",
+                "is_user_defined": true
+            }
+        },
+        "RussiaSpecProvider.passport_series": {
+            "year": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "RussiaSpecProvider.passport_number": {},
+        "RussiaSpecProvider.series_and_number": {},
+        "RussiaSpecProvider.snils": {},
+        "RussiaSpecProvider.inn": {},
+        "RussiaSpecProvider.ogrn": {},
+        "RussiaSpecProvider.bic": {},
+        "RussiaSpecProvider.kpp": {}
+    },
+    "mimesis.builtins.uk": {
+        "UkraineSpecProvider.__init__": {
+            "seed": {
+                "value": "Seed",
+                "is_user_defined": false
+            }
+        },
+        "UkraineSpecProvider.patronymic": {
+            "gender": {
+                "value": "Gender",
+                "is_user_defined": true
+            }
+        }
+    },
+    "mimesis.builtins": {},
+    "mimesis.data": {},
+    "mimesis.data.int.address": {},
+    "mimesis.data.int.business": {},
+    "mimesis.data.int.code": {},
+    "mimesis.data.int.datetime": {},
+    "mimesis.data.int.decorator": {},
+    "mimesis.data.int.development": {},
+    "mimesis.data.int.file": {},
+    "mimesis.data.int.hardware": {},
+    "mimesis.data.int.internet": {},
+    "mimesis.data.int.path": {},
+    "mimesis.data.int.payment": {},
+    "mimesis.data.int.person": {},
+    "mimesis.data.int.scientific": {},
+    "mimesis.data.int.structure": {},
+    "mimesis.data.int.text": {},
+    "mimesis.data.int.transport": {},
+    "mimesis.data.int": {},
+    "mimesis.providers.address": {
+        "Address.__init__": {},
+        "Address._dd_to_dms": {
+            "num": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "_type": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Address.street_number": {
+            "maximum": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Address.street_name": {},
+        "Address.street_suffix": {},
+        "Address.address": {},
+        "Address.state": {
+            "abbr": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Address.region": {},
+        "Address.province": {},
+        "Address.federal_subject": {},
+        "Address.prefecture": {},
+        "Address.postal_code": {},
+        "Address.zip_code": {},
+        "Address.country_code": {
+            "fmt": {
+                "value": "Optional[CountryCode]",
+                "is_user_defined": true
+            }
+        },
+        "Address.country": {
+            "allow_random": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Address.city": {},
+        "Address._get_fs": {
+            "key": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "dms": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Address.latitude": {
+            "dms": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Address.longitude": {
+            "dms": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Address.coordinates": {
+            "dms": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Address.continent": {
+            "code": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Address.calling_code": {}
+    },
+    "mimesis.providers.base": {
+        "BaseProvider.__init__": {
+            "seed": {
+                "value": "Seed",
+                "is_user_defined": false
+            }
+        },
+        "BaseProvider.reseed": {
+            "seed": {
+                "value": "Seed",
+                "is_user_defined": false
+            }
+        },
+        "BaseProvider._validate_enum": {
+            "item": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "enum": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "BaseProvider.__str__": {},
+        "BaseDataProvider.__init__": {
+            "locale": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "seed": {
+                "value": "Seed",
+                "is_user_defined": false
+            }
+        },
+        "BaseDataProvider._setup_locale": {
+            "locale": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "BaseDataProvider._update_dict": {
+            "initial": {
+                "value": "JSON",
+                "is_user_defined": false
+            },
+            "other": {
+                "value": "Mapping",
+                "is_user_defined": false
+            }
+        },
+        "BaseDataProvider._pull": {
+            "datafile": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "BaseDataProvider.get_current_locale": {},
+        "BaseDataProvider._override_locale": {
+            "locale": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "BaseDataProvider.override_locale": {
+            "locale": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "BaseDataProvider.__str__": {}
+    },
+    "mimesis.providers.business": {
+        "Business.__init__": {},
+        "Business.company": {},
+        "Business.company_type": {
+            "abbr": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Business.copyright": {},
+        "Business.currency_iso_code": {
+            "allow_random": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Business.cryptocurrency_iso_code": {},
+        "Business.currency_symbol": {},
+        "Business.cryptocurrency_symbol": {},
+        "Business.price": {
+            "minimum": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "maximum": {
+                "value": "float",
+                "is_user_defined": false
+            }
+        },
+        "Business.price_in_btc": {
+            "minimum": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "maximum": {
+                "value": "float",
+                "is_user_defined": false
+            }
+        }
+    },
+    "mimesis.providers.choice": {
+        "Choice.__init__": {},
+        "Choice.__call__": {
+            "items": {
+                "value": "Optional[Sequence[Any]]",
+                "is_user_defined": false
+            },
+            "length": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "unique": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        }
+    },
+    "mimesis.providers.clothing": {
+        "Clothing.international_size": {},
+        "Clothing.european_size": {},
+        "Clothing.custom_size": {
+            "minimum": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "maximum": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        }
+    },
+    "mimesis.providers.code": {
+        "Code.__init__": {},
+        "Code.locale_code": {},
+        "Code.issn": {
+            "mask": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Code.isbn": {
+            "fmt": {
+                "value": "Optional[ISBNFormat]",
+                "is_user_defined": true
+            },
+            "locale": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Code.ean": {
+            "fmt": {
+                "value": "Optional[EANFormat]",
+                "is_user_defined": true
+            }
+        },
+        "Code.imei": {},
+        "Code.pin": {
+            "mask": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "mimesis.providers.cryptographic": {
+        "Cryptographic.__init__": {},
+        "Cryptographic.uuid": {
+            "as_object": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Cryptographic.hash": {
+            "algorithm": {
+                "value": "Algorithm",
+                "is_user_defined": true
+            }
+        },
+        "Cryptographic.token_bytes": {
+            "entropy": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Cryptographic.token_hex": {
+            "entropy": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Cryptographic.token_urlsafe": {
+            "entropy": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Cryptographic.mnemonic_phrase": {
+            "length": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "separator": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            }
+        }
+    },
+    "mimesis.providers.date": {
+        "Datetime.__init__": {},
+        "Datetime.bulk_create_datetimes": {
+            "date_start": {
+                "value": "DateTime",
+                "is_user_defined": false
+            },
+            "date_end": {
+                "value": "DateTime",
+                "is_user_defined": false
+            }
+        },
+        "Datetime.week_date": {
+            "start": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Datetime.day_of_week": {
+            "abbr": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Datetime.month": {
+            "abbr": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Datetime.year": {
+            "minimum": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "maximum": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Datetime.century": {},
+        "Datetime.periodicity": {},
+        "Datetime.date": {
+            "start": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Datetime.formatted_date": {
+            "fmt": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Datetime.time": {},
+        "Datetime.formatted_time": {
+            "fmt": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Datetime.day_of_month": {},
+        "Datetime.timezone": {},
+        "Datetime.gmt_offset": {},
+        "Datetime.datetime": {
+            "start": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "timezone": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            }
+        },
+        "Datetime.formatted_datetime": {
+            "fmt": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Datetime.timestamp": {
+            "posix": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        }
+    },
+    "mimesis.providers.development": {
+        "Development.software_license": {},
+        "Development.version": {
+            "calver": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "pre_release": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Development.programming_language": {},
+        "Development.os": {},
+        "Development.boolean": {}
+    },
+    "mimesis.providers.file": {
+        "File.__init__": {},
+        "File.__sub": {
+            "string": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "File.extension": {
+            "file_type": {
+                "value": "Optional[FileType]",
+                "is_user_defined": true
+            }
+        },
+        "File.mime_type": {
+            "type_": {
+                "value": "Optional[MimeType]",
+                "is_user_defined": true
+            }
+        },
+        "File.size": {
+            "minimum": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "maximum": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "File.file_name": {
+            "file_type": {
+                "value": "Optional[FileType]",
+                "is_user_defined": true
+            }
+        }
+    },
+    "mimesis.providers.food": {
+        "Food.__init__": {},
+        "Food._choice_from": {
+            "key": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Food.vegetable": {},
+        "Food.fruit": {},
+        "Food.dish": {},
+        "Food.spices": {},
+        "Food.drink": {}
+    },
+    "mimesis.providers.generic": {
+        "Generic.__init__": {},
+        "Generic.__getattr__": {
+            "attrname": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Generic.__dir__": {},
+        "Generic.add_provider": {
+            "cls": {
+                "value": "Type[BaseProvider]",
+                "is_user_defined": true
+            }
+        },
+        "Generic.add_providers": {
+            "providers": {
+                "value": "Type[BaseProvider]",
+                "is_user_defined": true
+            }
+        }
+    },
+    "mimesis.providers.hardware": {
+        "Hardware.resolution": {},
+        "Hardware.screen_size": {},
+        "Hardware.cpu": {},
+        "Hardware.cpu_frequency": {},
+        "Hardware.generation": {},
+        "Hardware.cpu_model_code": {},
+        "Hardware.cpu_codename": {},
+        "Hardware.ram_type": {},
+        "Hardware.ram_size": {},
+        "Hardware.ssd_or_hdd": {},
+        "Hardware.graphics": {},
+        "Hardware.manufacturer": {},
+        "Hardware.phone_model": {}
+    },
+    "mimesis.providers.internet": {
+        "Internet.__init__": {},
+        "Internet.content_type": {
+            "mime_type": {
+                "value": "Optional[MimeType]",
+                "is_user_defined": true
+            }
+        },
+        "Internet.http_status_message": {},
+        "Internet.http_status_code": {},
+        "Internet.http_method": {},
+        "Internet.ip_v4_object": {},
+        "Internet.ip_v4": {
+            "with_port": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "port_range": {
+                "value": "PortRange",
+                "is_user_defined": true
+            }
+        },
+        "Internet.ip_v6_object": {},
+        "Internet.ip_v6": {},
+        "Internet.mac_address": {},
+        "Internet.emoji": {},
+        "Internet.image_placeholder": {
+            "width": {
+                "value": "Union[int, str]",
+                "is_user_defined": false
+            },
+            "height": {
+                "value": "Union[int, str]",
+                "is_user_defined": false
+            }
+        },
+        "Internet.stock_image": {
+            "width": {
+                "value": "Union[int, str]",
+                "is_user_defined": false
+            },
+            "height": {
+                "value": "Union[int, str]",
+                "is_user_defined": false
+            },
+            "keywords": {
+                "value": "Optional[List[str]]",
+                "is_user_defined": false
+            },
+            "writable": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Internet.hashtags": {
+            "quantity": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Internet.home_page": {
+            "tld_type": {
+                "value": "Optional[TLDType]",
+                "is_user_defined": true
+            }
+        },
+        "Internet.top_level_domain": {
+            "tld_type": {
+                "value": "Optional[TLDType]",
+                "is_user_defined": true
+            }
+        },
+        "Internet.user_agent": {},
+        "Internet.network_protocol": {
+            "layer": {
+                "value": "Optional[Layer]",
+                "is_user_defined": true
+            }
+        },
+        "Internet.port": {
+            "port_range": {
+                "value": "PortRange",
+                "is_user_defined": true
+            }
+        }
+    },
+    "mimesis.providers.numbers": {
+        "Numbers.float_number": {
+            "start": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "precision": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Numbers.floats": {
+            "start": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "n": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "precision": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Numbers.integer_number": {
+            "start": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Numbers.integers": {
+            "start": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "n": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Numbers.complex_number": {
+            "start_real": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "end_real": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "start_imag": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "end_imag": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "precision_real": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "precision_imag": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Numbers.complexes": {
+            "start_real": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "end_real": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "start_imag": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "end_imag": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "precision_real": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "precision_imag": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "n": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Numbers.decimal_number": {
+            "start": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "float",
+                "is_user_defined": false
+            }
+        },
+        "Numbers.decimals": {
+            "start": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "n": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Numbers.matrix": {
+            "m": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "n": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "num_type": {
+                "value": "NumTypes",
+                "is_user_defined": true
+            }
+        }
+    },
+    "mimesis.providers.path": {
+        "Path.__init__": {
+            "platform": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Path.root": {},
+        "Path.home": {},
+        "Path.user": {},
+        "Path.users_folder": {},
+        "Path.dev_dir": {},
+        "Path.project_dir": {}
+    },
+    "mimesis.providers.payment": {
+        "Payment.__init__": {},
+        "Payment.cid": {},
+        "Payment.paypal": {},
+        "Payment.bitcoin_address": {},
+        "Payment.ethereum_address": {},
+        "Payment.credit_card_network": {},
+        "Payment.credit_card_number": {
+            "card_type": {
+                "value": "Optional[CardType]",
+                "is_user_defined": true
+            }
+        },
+        "Payment.credit_card_expiration_date": {
+            "minimum": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "maximum": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Payment.cvv": {},
+        "Payment.credit_card_owner": {
+            "gender": {
+                "value": "Optional[Gender]",
+                "is_user_defined": true
+            }
+        }
+    },
+    "mimesis.providers.person": {
+        "Person.__init__": {},
+        "Person.age": {
+            "minimum": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "maximum": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Person.work_experience": {
+            "working_start_age": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Person.name": {
+            "gender": {
+                "value": "Optional[Gender]",
+                "is_user_defined": true
+            }
+        },
+        "Person.first_name": {
+            "gender": {
+                "value": "Optional[Gender]",
+                "is_user_defined": true
+            }
+        },
+        "Person.surname": {
+            "gender": {
+                "value": "Optional[Gender]",
+                "is_user_defined": true
+            }
+        },
+        "Person.last_name": {
+            "gender": {
+                "value": "Optional[Gender]",
+                "is_user_defined": true
+            }
+        },
+        "Person.title": {
+            "gender": {
+                "value": "Optional[Gender]",
+                "is_user_defined": true
+            },
+            "title_type": {
+                "value": "Optional[TitleType]",
+                "is_user_defined": true
+            }
+        },
+        "Person.full_name": {
+            "gender": {
+                "value": "Optional[Gender]",
+                "is_user_defined": true
+            },
+            "reverse": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Person.username": {
+            "template": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            }
+        },
+        "Person.password": {
+            "length": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "hashed": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Person.email": {
+            "domains": {
+                "value": "Union[tuple, list]",
+                "is_user_defined": false
+            },
+            "unique": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Person.social_media_profile": {
+            "site": {
+                "value": "Optional[SocialNetwork]",
+                "is_user_defined": true
+            }
+        },
+        "Person.gender": {
+            "iso5218": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "symbol": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Person.sex": {},
+        "Person.height": {
+            "minimum": {
+                "value": "float",
+                "is_user_defined": false
+            },
+            "maximum": {
+                "value": "float",
+                "is_user_defined": false
+            }
+        },
+        "Person.weight": {
+            "minimum": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "maximum": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Person.blood_type": {},
+        "Person.sexual_orientation": {
+            "symbol": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Person.occupation": {},
+        "Person.political_views": {},
+        "Person.worldview": {},
+        "Person.views_on": {},
+        "Person.nationality": {
+            "gender": {
+                "value": "Optional[Gender]",
+                "is_user_defined": true
+            }
+        },
+        "Person.university": {},
+        "Person.academic_degree": {},
+        "Person.language": {},
+        "Person.telephone": {
+            "mask": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "placeholder": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Person.avatar": {
+            "size": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Person.identifier": {
+            "mask": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "mimesis.providers.science": {
+        "Science.__init__": {},
+        "Science.chemical_element": {
+            "name_only": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Science.atomic_number": {},
+        "Science.rna_sequence": {
+            "length": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Science.dna_sequence": {
+            "length": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        }
+    },
+    "mimesis.providers.structure": {
+        "Structure.__init__": {},
+        "Structure.css": {},
+        "Structure.css_property": {},
+        "Structure.html": {},
+        "Structure.html_attribute_value": {
+            "tag": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "attribute": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "mimesis.providers.text": {
+        "Text.__init__": {},
+        "Text.alphabet": {
+            "lower_case": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Text.level": {},
+        "Text.text": {
+            "quantity": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Text.sentence": {},
+        "Text.title": {},
+        "Text.words": {
+            "quantity": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Text.word": {},
+        "Text.swear_word": {},
+        "Text.quote": {},
+        "Text.color": {},
+        "Text._hex_to_rgb": {
+            "color": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Text.hex_color": {
+            "safe": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Text.rgb_color": {
+            "safe": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Text.answer": {}
+    },
+    "mimesis.providers.transport": {
+        "Transport.__init__": {},
+        "Transport.truck": {
+            "model_mask": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Transport.manufacturer": {},
+        "Transport.car": {},
+        "Transport.airplane": {
+            "model_mask": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Transport.vehicle_registration_code": {
+            "locale": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            }
+        }
+    },
+    "mimesis.providers.units": {
+        "UnitSystem.unit": {
+            "name": {
+                "value": "Optional[UnitName]",
+                "is_user_defined": true
+            }
+        },
+        "UnitSystem.prefix": {
+            "sign": {
+                "value": "Optional[PrefixSign]",
+                "is_user_defined": true
+            },
+            "symbol": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        }
+    },
+    "mimesis.providers": {}
+}

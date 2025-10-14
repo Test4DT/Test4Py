@@ -1,0 +1,435 @@
+{
+    "apimd.loader": {
+        "_read": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_write": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "doc": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_site_path": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "walk_packages": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_load_module": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "p": {
+                "value": "Parser",
+                "is_user_defined": true
+            }
+        },
+        "loader": {
+            "root": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "pwd": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "link": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "level": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "toc": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "gen_api": {
+            "root_names": {
+                "value": "dict[str, str]",
+                "is_user_defined": false
+            },
+            "pwd": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            },
+            "prefix": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "link": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "level": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "toc": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "dry": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        }
+    },
+    "apimd.logger": {},
+    "apimd.parser": {
+        "_m": {
+            "names": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_attr": {
+            "obj": {
+                "value": "object",
+                "is_user_defined": false
+            },
+            "attr": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_defaults": {
+            "args": {
+                "value": "Sequence[Optional[expr]]",
+                "is_user_defined": false
+            }
+        },
+        "parent": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "level": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "is_magic": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "is_public_family": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "walk_body": {
+            "body": {
+                "value": "Sequence[stmt]",
+                "is_user_defined": false
+            }
+        },
+        "code": {
+            "doc": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "esc_underscore": {
+            "doc": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "doctest": {
+            "doc": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_table_cell": {
+            "items": {
+                "value": "Iterable[str]",
+                "is_user_defined": false
+            }
+        },
+        "_table_split": {
+            "args": {
+                "value": "Iterable[str]",
+                "is_user_defined": false
+            }
+        },
+        "table": {
+            "items": {
+                "value": "Iterable[Union[str, Iterable[str]]]",
+                "is_user_defined": false
+            },
+            "titles": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_type_name": {
+            "obj": {
+                "value": "object",
+                "is_user_defined": false
+            }
+        },
+        "_e_type": {
+            "elements": {
+                "value": "Sequence[Optional[expr]]",
+                "is_user_defined": false
+            }
+        },
+        "const_type": {
+            "node": {
+                "value": "expr",
+                "is_user_defined": false
+            }
+        },
+        "Resolver.__init__": {
+            "root": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "alias": {
+                "value": "dict[str, str]",
+                "is_user_defined": false
+            },
+            "self_ty": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Resolver.visit_Constant": {
+            "node": {
+                "value": "Constant",
+                "is_user_defined": false
+            }
+        },
+        "Resolver.visit_Name": {
+            "node": {
+                "value": "Name",
+                "is_user_defined": false
+            }
+        },
+        "Resolver.visit_Subscript": {
+            "node": {
+                "value": "Subscript",
+                "is_user_defined": false
+            }
+        },
+        "Resolver.visit_Attribute": {
+            "node": {
+                "value": "Attribute",
+                "is_user_defined": false
+            }
+        },
+        "Parser.new": {
+            "cls": {
+                "value": "type[_Self]",
+                "is_user_defined": false
+            },
+            "link": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "level": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "toc": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Parser.__post_init__": {},
+        "Parser.parse": {
+            "root": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "script": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Parser.imports": {
+            "root": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "node": {
+                "value": "_I",
+                "is_user_defined": false
+            }
+        },
+        "Parser.globals": {
+            "root": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "node": {
+                "value": "_G",
+                "is_user_defined": false
+            }
+        },
+        "Parser.api": {
+            "root": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "node": {
+                "value": "_API",
+                "is_user_defined": false
+            },
+            "prefix": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Parser.func_api": {
+            "root": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "node": {
+                "value": "arguments",
+                "is_user_defined": false
+            },
+            "returns": {
+                "value": "Optional[expr]",
+                "is_user_defined": false
+            },
+            "has_self": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "cls_method": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Parser.class_api": {
+            "root": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "bases": {
+                "value": "list[expr]",
+                "is_user_defined": false
+            },
+            "body": {
+                "value": "list[stmt]",
+                "is_user_defined": false
+            }
+        },
+        "Parser.func_ann": {
+            "root": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Sequence[arg]",
+                "is_user_defined": false
+            },
+            "has_self": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "cls_method": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Parser.resolve": {
+            "root": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "node": {
+                "value": "expr",
+                "is_user_defined": false
+            },
+            "self_ty": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Parser.load_docstring": {
+            "root": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "m": {
+                "value": "ModuleType",
+                "is_user_defined": false
+            }
+        },
+        "Parser.__is_immediate_family": {
+            "n1": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "n2": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Parser.__find_alias": {},
+        "Parser.is_public": {
+            "s": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Parser.__get_const": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Parser.__names_cmp": {
+            "s": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Parser.compile": {}
+    },
+    "apimd.pep585": {},
+    "apimd": {},
+    "apimd.__main__": {
+        "main": {}
+    }
+}

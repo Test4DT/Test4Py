@@ -1,0 +1,1130 @@
+{
+    "flutes.exception": {
+        "register_ipython_excepthook": {},
+        "log_exception": {
+            "user_msg": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            }
+        },
+        "exception_wrapper": {},
+        "register_ipython_excepthook.excepthook": {},
+        "exception_wrapper._unwrap": {},
+        "exception_wrapper.decorator": {}
+    },
+    "flutes.fs": {
+        "readable_size": {
+            "size": {
+                "value": "float",
+                "is_user_defined": false
+            }
+        },
+        "get_file_lines": {
+            "path": {
+                "value": "PathType",
+                "is_user_defined": false
+            }
+        },
+        "remove_prefix": {
+            "s": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "prefix": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "copy_tree": {
+            "src": {
+                "value": "PathType",
+                "is_user_defined": false
+            },
+            "dst": {
+                "value": "PathType",
+                "is_user_defined": false
+            },
+            "overwrite": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "cache": {
+            "path": {
+                "value": "Optional[PathType]",
+                "is_user_defined": false
+            },
+            "verbose": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "name": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            }
+        },
+        "scandir": {
+            "path": {
+                "value": "PathType",
+                "is_user_defined": false
+            }
+        },
+        "get_folder_size": {
+            "path": {
+                "value": "PathType",
+                "is_user_defined": false
+            }
+        },
+        "cache.decorator": {}
+    },
+    "flutes.io": {
+        "shut_up": {
+            "stderr": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "stdout": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "progress_open": {
+            "bar_fn": {
+                "value": "Optional[Callable[..., tqdm]]",
+                "is_user_defined": false
+            }
+        },
+        "reverse_open": {
+            "path": {
+                "value": "PathType",
+                "is_user_defined": false
+            },
+            "encoding": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "allow_empty_lines": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "buffer_size": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "_ProgressBufferedReader.__init__": {
+            "raw": {
+                "value": "io.RawIOBase",
+                "is_user_defined": false
+            },
+            "buffer_size": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "bar_fn": {
+                "value": "Callable[..., tqdm]",
+                "is_user_defined": false
+            },
+            "bar_kwargs": {
+                "value": "Dict[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "_ProgressBufferedReader.__enter__": {},
+        "_ProgressBufferedReader.__exit__": {},
+        "_ProgressBufferedReader.close": {},
+        "_ProgressBufferedReader.read": {
+            "size": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            }
+        },
+        "_ProgressBufferedReader.read1": {
+            "size": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "_ProgressBufferedReader.readline": {
+            "size": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "_ProgressBufferedReader.seek": {
+            "offset": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "whence": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "_ReverseReadlineFile.generator": {},
+        "_ReverseReadlineFile.__init__": {
+            "fp": {
+                "value": "IO",
+                "is_user_defined": false
+            }
+        },
+        "_ReverseReadlineFile.__iter__": {},
+        "_ReverseReadlineFile.__next__": {},
+        "_ReverseReadlineFile.__enter__": {},
+        "_ReverseReadlineFile.__exit__": {},
+        "_ReverseReadlineFile.readline": {},
+        "_ReverseReadlineFile.close": {}
+    },
+    "flutes.iterator": {
+        "chunk": {
+            "n": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            }
+        },
+        "take": {
+            "n": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            }
+        },
+        "drop": {
+            "n": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            }
+        },
+        "drop_until": {
+            "pred_fn": {
+                "value": "Callable[[T], bool]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            }
+        },
+        "split_by": {
+            "iterable": {
+                "value": "Iterable[A]",
+                "is_user_defined": false
+            },
+            "empty_segments": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "scanl": {},
+        "scanr": {},
+        "LazyList.__init__": {
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            }
+        },
+        "LazyList.__iter__": {},
+        "LazyList._fetch_until": {
+            "idx": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            }
+        },
+        "LazyList.__getitem__": {},
+        "LazyList.__len__": {},
+        "Range.__init__": {},
+        "Range.__iter__": {},
+        "Range.__next__": {},
+        "Range.__len__": {},
+        "Range._get_idx": {
+            "idx": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Range.__getitem__": {},
+        "MapList.__init__": {
+            "func": {
+                "value": "Callable[[T], R]",
+                "is_user_defined": false
+            },
+            "lst": {
+                "value": "Sequence[T]",
+                "is_user_defined": false
+            }
+        },
+        "MapList.__getitem__": {},
+        "MapList.__iter__": {},
+        "MapList.__len__": {}
+    },
+    "flutes.log": {
+        "get_worker_id": {},
+        "_remove_handlers": {},
+        "get_logging_levels": {},
+        "set_log_file": {
+            "path": {
+                "value": "PathType",
+                "is_user_defined": false
+            },
+            "fmt": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "log": {
+            "msg": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "level": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "force_console": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "timestamp": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "include_proc_id": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "set_logging_level": {
+            "level": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "console": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "file": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "_get_console_logging_function": {},
+        "set_console_logging_function": {
+            "log_fn": {
+                "value": "Callable[[str], None]",
+                "is_user_defined": false
+            }
+        },
+        "MultiprocessingFileHandler.__init__": {
+            "path": {
+                "value": "PathType",
+                "is_user_defined": false
+            },
+            "mode": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "MultiprocessingFileHandler.setFormatter": {},
+        "MultiprocessingFileHandler.receive": {},
+        "MultiprocessingFileHandler.send": {},
+        "MultiprocessingFileHandler._format_record": {},
+        "MultiprocessingFileHandler.emit": {},
+        "MultiprocessingFileHandler.close": {}
+    },
+    "flutes.math": {
+        "ceil_div": {
+            "a": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "b": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        }
+    },
+    "flutes.multiproc": {
+        "_pool_state_init": {
+            "state_class": {
+                "value": "Type[PoolState]",
+                "is_user_defined": true
+            }
+        },
+        "_pool_fn_with_state": {
+            "fn": {
+                "value": "Callable[..., R]",
+                "is_user_defined": false
+            }
+        },
+        "_chain_fns": {
+            "fns": {
+                "value": "List[Callable[..., R]]",
+                "is_user_defined": false
+            },
+            "fn_arg_kwargs": {
+                "value": "List[Tuple[Tuple[Any, ...], Dict[str, Any]]]",
+                "is_user_defined": false
+            }
+        },
+        "_gather_fn": {
+            "queue": {
+                "value": "'mp.Queue[R]'",
+                "is_user_defined": false
+            },
+            "fn": {
+                "value": "Callable[[T], Iterator[R]]",
+                "is_user_defined": false
+            }
+        },
+        "safe_pool": {},
+        "kill_proc_tree": {
+            "pid": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "including_parent": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "DummyApplyResult.__init__": {
+            "value": {
+                "value": "T",
+                "is_user_defined": false
+            }
+        },
+        "DummyApplyResult.ready": {},
+        "DummyApplyResult.success": {},
+        "DummyApplyResult.wait": {
+            "timeout": {
+                "value": "Optional[float]",
+                "is_user_defined": false
+            }
+        },
+        "DummyApplyResult.get": {
+            "timeout": {
+                "value": "Optional[float]",
+                "is_user_defined": false
+            }
+        },
+        "DummyPool.__init__": {
+            "processes": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            },
+            "initializer": {
+                "value": "Optional[Callable[..., None]]",
+                "is_user_defined": false
+            },
+            "initargs": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "maxtasksperchild": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            },
+            "context": {
+                "value": "Optional[Any]",
+                "is_user_defined": false
+            }
+        },
+        "DummyPool.imap": {
+            "fn": {
+                "value": "Callable[[T], R]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            }
+        },
+        "DummyPool.imap_unordered": {
+            "fn": {
+                "value": "Callable[[T], R]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            }
+        },
+        "DummyPool.map": {
+            "fn": {
+                "value": "Callable[[T], R]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            }
+        },
+        "DummyPool.map_async": {
+            "fn": {
+                "value": "Callable[[T], R]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            }
+        },
+        "DummyPool.starmap": {
+            "fn": {
+                "value": "Callable[..., R]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[Tuple[T, ...]]",
+                "is_user_defined": false
+            }
+        },
+        "DummyPool.starmap_async": {
+            "fn": {
+                "value": "Callable[..., R]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[Tuple[T, ...]]",
+                "is_user_defined": false
+            }
+        },
+        "DummyPool.apply": {
+            "fn": {
+                "value": "Callable[..., R]",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "kwds": {
+                "value": "Dict[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "DummyPool.apply_async": {
+            "fn": {
+                "value": "Callable[..., R]",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "kwds": {
+                "value": "Dict[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "DummyPool.gather": {
+            "fn": {
+                "value": "Callable[[T], Iterator[R]]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            }
+        },
+        "DummyPool._no_op": {},
+        "DummyPool.__getattr__": {},
+        "DummyPool.__enter__": {},
+        "DummyPool.__exit__": {},
+        "PoolState.__return_state__": {},
+        "FuncWrapper.__init__": {
+            "fn": {
+                "value": "Callable[..., R]",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "kwds": {
+                "value": "Mapping[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "FuncWrapper.__call__": {},
+        "PoolWrapper.__init__": {},
+        "PoolWrapper._define_method": {
+            "pool_method": {
+                "value": "Callable[..., R]",
+                "is_user_defined": false
+            }
+        },
+        "PoolWrapper.gather": {
+            "fn": {
+                "value": "Callable[[T], Iterator[R]]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            },
+            "chunksize": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "kwds": {
+                "value": "Dict[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "StatefulPool.__init__": {
+            "pool_class": {
+                "value": "Type['PoolType']",
+                "is_user_defined": false
+            },
+            "state_class": {
+                "value": "Type[State]",
+                "is_user_defined": false
+            },
+            "state_init_args": {
+                "value": "Tuple[Any, ...]",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Tuple[Any, ...]",
+                "is_user_defined": false
+            },
+            "kwargs": {
+                "value": "Dict[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "StatefulPool._wrap_fn": {
+            "func": {
+                "value": "Callable[[State, T], R]",
+                "is_user_defined": false
+            },
+            "allow_function": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "StatefulPool._define_method": {
+            "pool_method": {
+                "value": "Callable[..., R]",
+                "is_user_defined": false
+            }
+        },
+        "StatefulPool._init_broadcast": {
+            "_dummy": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "StatefulPool._apply_broadcast": {
+            "broadcast_fn": {
+                "value": "Callable[[State], R]",
+                "is_user_defined": false
+            }
+        },
+        "StatefulPool.get_states": {},
+        "StatefulPool.broadcast": {
+            "fn": {
+                "value": "Callable[[State], R]",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "kwds": {
+                "value": "Mapping[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "StatefulPool.__getattr__": {},
+        "PoolType.apply": {
+            "fn": {
+                "value": "Callable[..., T]",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "kwds": {
+                "value": "Mapping[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "PoolType.apply_async": {
+            "func": {
+                "value": "Callable[..., T]",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "kwds": {
+                "value": "Mapping[str, Any]",
+                "is_user_defined": false
+            },
+            "callback": {
+                "value": "Optional[Callable[[T], None]]",
+                "is_user_defined": false
+            },
+            "error_callback": {
+                "value": "Optional[Callable[[BaseException], None]]",
+                "is_user_defined": false
+            }
+        },
+        "PoolType.map": {
+            "fn": {
+                "value": "Callable[[T], R]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            },
+            "chunksize": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "kwds": {
+                "value": "Mapping[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "PoolType.map_async": {
+            "fn": {
+                "value": "Callable[[T], R]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            },
+            "chunksize": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            },
+            "callback": {
+                "value": "Optional[Callable[[T], None]]",
+                "is_user_defined": false
+            },
+            "error_callback": {
+                "value": "Optional[Callable[[BaseException], None]]",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "kwds": {
+                "value": "Mapping[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "PoolType.imap": {
+            "fn": {
+                "value": "Callable[[T], R]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            },
+            "chunksize": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "kwds": {
+                "value": "Mapping[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "PoolType.imap_unordered": {
+            "fn": {
+                "value": "Callable[[T], R]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            },
+            "chunksize": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "kwds": {
+                "value": "Mapping[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "PoolType.starmap": {
+            "fn": {
+                "value": "Callable[..., R]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[Iterable[Any]]",
+                "is_user_defined": false
+            },
+            "chunksize": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "kwds": {
+                "value": "Mapping[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "PoolType.starmap_async": {
+            "fn": {
+                "value": "Callable[..., R]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[Iterable[Any]]",
+                "is_user_defined": false
+            },
+            "chunksize": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            },
+            "callback": {
+                "value": "Optional[Callable[[T], None]]",
+                "is_user_defined": false
+            },
+            "error_callback": {
+                "value": "Optional[Callable[[BaseException], None]]",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "kwds": {
+                "value": "Mapping[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "PoolType.gather": {
+            "fn": {
+                "value": "Callable[[T], Iterator[R]]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            },
+            "chunksize": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "kwds": {
+                "value": "Mapping[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "StatefulPoolType.map": {
+            "fn": {
+                "value": "Callable[[State, T], R]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            },
+            "chunksize": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "kwds": {
+                "value": "Mapping[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "StatefulPoolType.map_async": {
+            "fn": {
+                "value": "Callable[[State, T], R]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            },
+            "chunksize": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            },
+            "callback": {
+                "value": "Optional[Callable[[T], None]]",
+                "is_user_defined": false
+            },
+            "error_callback": {
+                "value": "Optional[Callable[[BaseException], None]]",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "kwds": {
+                "value": "Mapping[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "StatefulPoolType.imap": {
+            "fn": {
+                "value": "Callable[[State, T], R]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            },
+            "chunksize": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "kwds": {
+                "value": "Mapping[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "StatefulPoolType.imap_unordered": {
+            "fn": {
+                "value": "Callable[[State, T], R]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            },
+            "chunksize": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "kwds": {
+                "value": "Mapping[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "StatefulPoolType.gather": {
+            "fn": {
+                "value": "Callable[[State, T], Iterator[R]]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[T]",
+                "is_user_defined": false
+            },
+            "chunksize": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "kwds": {
+                "value": "Mapping[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "StatefulPoolType.get_states": {},
+        "StatefulPoolType.broadcast": {
+            "fn": {
+                "value": "Callable[[State], R]",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "kwds": {
+                "value": "Mapping[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "safe_pool.close_fn": {},
+        "MultiprocessingFileWriter.__init__": {
+            "path": {
+                "value": "PathType",
+                "is_user_defined": false
+            },
+            "mode": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "MultiprocessingFileWriter.__enter__": {},
+        "MultiprocessingFileWriter.__exit__": {},
+        "MultiprocessingFileWriter.write": {
+            "s": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "MultiprocessingFileWriter._receive": {},
+        "ProgressBarManager.__init__": {
+            "verbose": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "ProgressBarManager.proxy": {},
+        "ProgressBarManager._close_bar": {
+            "worker_id": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            }
+        },
+        "ProgressBarManager._run": {},
+        "ProgressBarManager.__enter__": {},
+        "ProgressBarManager.__exit__": {},
+        "ProgressBarManager.close": {},
+        "run_initializer": {}
+    },
+    "flutes.run": {
+        "error_wrapper": {
+            "err": {
+                "value": "ExcType",
+                "is_user_defined": false
+            }
+        },
+        "run_command": {
+            "args": {
+                "value": "Union[str, List[str]]",
+                "is_user_defined": false
+            },
+            "env": {
+                "value": "Optional[Dict[str, str]]",
+                "is_user_defined": false
+            },
+            "cwd": {
+                "value": "Optional[PathType]",
+                "is_user_defined": false
+            },
+            "timeout": {
+                "value": "Optional[float]",
+                "is_user_defined": false
+            },
+            "verbose": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "return_output": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "ignore_errors": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "error_wrapper.__str__": {}
+    },
+    "flutes.structure": {
+        "reverse_map": {
+            "d": {
+                "value": "Dict[T, int]",
+                "is_user_defined": false
+            }
+        },
+        "register_no_map_class": {
+            "container_type": {
+                "value": "Type[T]",
+                "is_user_defined": false
+            }
+        },
+        "_no_map_type": {
+            "container_type": {
+                "value": "Type[T]",
+                "is_user_defined": false
+            }
+        },
+        "no_map_instance": {
+            "instance": {
+                "value": "T",
+                "is_user_defined": false
+            }
+        },
+        "map_structure": {
+            "fn": {
+                "value": "Callable[[T], R]",
+                "is_user_defined": false
+            },
+            "obj": {
+                "value": "Collection[T]",
+                "is_user_defined": false
+            }
+        },
+        "map_structure_zip": {
+            "fn": {
+                "value": "Callable[..., R]",
+                "is_user_defined": false
+            },
+            "objs": {
+                "value": "Sequence[Collection[T]]",
+                "is_user_defined": false
+            }
+        }
+    },
+    "flutes.timing": {
+        "work_in_progress": {
+            "desc": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "flutes.types": {},
+    "flutes": {},
+    "flutes.__version__": {}
+}

@@ -1,0 +1,1719 @@
+{
+    "pypara.currencies": {
+        "CurrencyLookupError.__init__": {
+            "code": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Currency.__eq__": {
+            "other": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Currency.__hash__": {},
+        "Currency.quantize": {
+            "qty": {
+                "value": "Decimal",
+                "is_user_defined": false
+            }
+        },
+        "Currency.of": {
+            "code": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "decimals": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "ctype": {
+                "value": "CurrencyType",
+                "is_user_defined": true
+            }
+        },
+        "CurrencyRegistry.__new__": {},
+        "CurrencyRegistry.__init__": {},
+        "CurrencyRegistry.__enter__": {},
+        "CurrencyRegistry.__exit__": {
+            "exc_type": {
+                "value": "Optional[Type[Exception]]",
+                "is_user_defined": false
+            },
+            "exc_value": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            },
+            "tracebackx": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "CurrencyRegistry.__register": {
+            "currency": {
+                "value": "Currency",
+                "is_user_defined": true
+            }
+        },
+        "CurrencyRegistry.__len__": {},
+        "CurrencyRegistry.__contains__": {
+            "code": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "CurrencyRegistry.__getitem__": {
+            "code": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "CurrencyRegistry.has": {
+            "code": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "CurrencyRegistry.get": {
+            "code": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "default": {
+                "value": "Optional[Currency]",
+                "is_user_defined": true
+            }
+        },
+        "CurrencyRegistry.all": {},
+        "CurrencyRegistry.codes": {},
+        "CurrencyRegistry.codenames": {}
+    },
+    "pypara.dcc": {
+        "_as_ccys": {
+            "codes": {
+                "value": "Set[str]",
+                "is_user_defined": false
+            }
+        },
+        "_get_date_range": {
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "Date",
+                "is_user_defined": false
+            }
+        },
+        "_get_actual_day_count": {
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "Date",
+                "is_user_defined": false
+            }
+        },
+        "_has_leap_day": {
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "Date",
+                "is_user_defined": false
+            }
+        },
+        "_is_last_day_of_month": {
+            "date": {
+                "value": "Date",
+                "is_user_defined": false
+            }
+        },
+        "_last_payment_date": {
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "asof": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "frequency": {
+                "value": "Union[int, Decimal]",
+                "is_user_defined": false
+            },
+            "eom": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            }
+        },
+        "_next_payment_date": {
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "frequency": {
+                "value": "Union[int, Decimal]",
+                "is_user_defined": false
+            },
+            "eom": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            }
+        },
+        "_construct_date": {
+            "year": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "month": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "day": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "dcc": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "altnames": {
+                "value": "Optional[Set[str]]",
+                "is_user_defined": false
+            },
+            "ccys": {
+                "value": "Optional[Set[Currency]]",
+                "is_user_defined": true
+            }
+        },
+        "dcfc_act_act": {
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "asof": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "freq": {
+                "value": "Optional[Decimal]",
+                "is_user_defined": false
+            }
+        },
+        "dcfc_act_act_icma": {
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "asof": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "freq": {
+                "value": "Optional[Decimal]",
+                "is_user_defined": false
+            }
+        },
+        "dcfc_act_360": {
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "asof": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "freq": {
+                "value": "Optional[Decimal]",
+                "is_user_defined": false
+            }
+        },
+        "dcfc_act_365_f": {
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "asof": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "freq": {
+                "value": "Optional[Decimal]",
+                "is_user_defined": false
+            }
+        },
+        "dcfc_act_365_a": {
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "asof": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "freq": {
+                "value": "Optional[Decimal]",
+                "is_user_defined": false
+            }
+        },
+        "dcfc_act_365_l": {
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "asof": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "freq": {
+                "value": "Optional[Decimal]",
+                "is_user_defined": false
+            }
+        },
+        "dcfc_nl_365": {
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "asof": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "freq": {
+                "value": "Optional[Decimal]",
+                "is_user_defined": false
+            }
+        },
+        "dcfc_30_360_isda": {
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "asof": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "freq": {
+                "value": "Optional[Decimal]",
+                "is_user_defined": false
+            }
+        },
+        "dcfc_30_e_360": {
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "asof": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "freq": {
+                "value": "Optional[Decimal]",
+                "is_user_defined": false
+            }
+        },
+        "dcfc_30_e_plus_360": {
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "asof": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "freq": {
+                "value": "Optional[Decimal]",
+                "is_user_defined": false
+            }
+        },
+        "dcfc_30_360_german": {
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "asof": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "freq": {
+                "value": "Optional[Decimal]",
+                "is_user_defined": false
+            }
+        },
+        "dcfc_30_360_us": {
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "asof": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "freq": {
+                "value": "Optional[Decimal]",
+                "is_user_defined": false
+            }
+        },
+        "DCC.calculate_fraction": {
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "asof": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "freq": {
+                "value": "Optional[Decimal]",
+                "is_user_defined": false
+            }
+        },
+        "DCC.calculate_daily_fraction": {
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "asof": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "freq": {
+                "value": "Optional[Decimal]",
+                "is_user_defined": false
+            }
+        },
+        "DCC.interest": {
+            "principal": {
+                "value": "Money",
+                "is_user_defined": true
+            },
+            "rate": {
+                "value": "Decimal",
+                "is_user_defined": false
+            },
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "asof": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "Optional[Date]",
+                "is_user_defined": false
+            },
+            "freq": {
+                "value": "Optional[Decimal]",
+                "is_user_defined": false
+            }
+        },
+        "DCC.coupon": {
+            "principal": {
+                "value": "Money",
+                "is_user_defined": true
+            },
+            "rate": {
+                "value": "Decimal",
+                "is_user_defined": false
+            },
+            "start": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "asof": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "end": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "freq": {
+                "value": "Union[int, Decimal]",
+                "is_user_defined": false
+            },
+            "eom": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            }
+        },
+        "DCCRegistryMachinery.__init__": {},
+        "DCCRegistryMachinery._is_registered": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "DCCRegistryMachinery.register": {
+            "dcc": {
+                "value": "DCC",
+                "is_user_defined": true
+            }
+        },
+        "DCCRegistryMachinery._find_strict": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "DCCRegistryMachinery.find": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "DCCRegistryMachinery.registry": {},
+        "DCCRegistryMachinery.table": {},
+        "dcc.register_and_return_dcfc": {
+            "func": {
+                "value": "DCFC",
+                "is_user_defined": false
+            }
+        }
+    },
+    "pypara.exchange": {
+        "FXRateLookupError.__init__": {
+            "ccy1": {
+                "value": "Currency",
+                "is_user_defined": true
+            },
+            "ccy2": {
+                "value": "Currency",
+                "is_user_defined": true
+            },
+            "asof": {
+                "value": "Date",
+                "is_user_defined": false
+            }
+        },
+        "FXRate.__invert__": {},
+        "FXRate.of": {
+            "ccy1": {
+                "value": "Currency",
+                "is_user_defined": true
+            },
+            "ccy2": {
+                "value": "Currency",
+                "is_user_defined": true
+            },
+            "date": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "value": {
+                "value": "Decimal",
+                "is_user_defined": false
+            }
+        },
+        "FXRateService.query": {
+            "ccy1": {
+                "value": "Currency",
+                "is_user_defined": true
+            },
+            "ccy2": {
+                "value": "Currency",
+                "is_user_defined": true
+            },
+            "asof": {
+                "value": "Date",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "FXRateService.queries": {
+            "queries": {
+                "value": "Iterable[TQuery]",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        }
+    },
+    "pypara.monetary": {
+        "IncompatibleCurrencyError.__init__": {
+            "ccy1": {
+                "value": "Currency",
+                "is_user_defined": true
+            },
+            "ccy2": {
+                "value": "Currency",
+                "is_user_defined": true
+            },
+            "operation": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Money.is_equal": {
+            "other": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Money.as_boolean": {},
+        "Money.as_float": {},
+        "Money.as_integer": {},
+        "Money.abs": {},
+        "Money.negative": {},
+        "Money.positive": {},
+        "Money.round": {
+            "ndigits": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Money.add": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "Money.scalar_add": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "Money.subtract": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "Money.scalar_subtract": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "Money.multiply": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "Money.divide": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "Money.floor_divide": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "Money.lt": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "Money.lte": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "Money.gt": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "Money.gte": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "Money.with_ccy": {
+            "ccy": {
+                "value": "Currency",
+                "is_user_defined": true
+            }
+        },
+        "Money.with_qty": {
+            "qty": {
+                "value": "Decimal",
+                "is_user_defined": false
+            }
+        },
+        "Money.with_dov": {
+            "dov": {
+                "value": "Date",
+                "is_user_defined": false
+            }
+        },
+        "Money.convert": {
+            "to": {
+                "value": "Currency",
+                "is_user_defined": true
+            },
+            "asof": {
+                "value": "Optional[Date]",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Money.of": {
+            "ccy": {
+                "value": "Optional[Currency]",
+                "is_user_defined": true
+            },
+            "qty": {
+                "value": "Optional[Decimal]",
+                "is_user_defined": false
+            },
+            "dov": {
+                "value": "Optional[Date]",
+                "is_user_defined": false
+            }
+        },
+        "Money.price": {},
+        "Money.__bool__": {},
+        "Money.__eq__": {
+            "other": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Money.__abs__": {},
+        "Money.__float__": {},
+        "Money.__int__": {},
+        "Money.__round__": {
+            "ndigits": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            }
+        },
+        "Money.__neg__": {},
+        "Money.__pos__": {},
+        "Money.__add__": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "Money.__sub__": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "Money.__mul__": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "Money.__truediv__": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "Money.__floordiv__": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "Money.__lt__": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "Money.__le__": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "Money.__gt__": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "Money.__ge__": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "SomeMoney.is_equal": {
+            "other": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "SomeMoney.as_boolean": {},
+        "SomeMoney.as_float": {},
+        "SomeMoney.as_integer": {},
+        "SomeMoney.abs": {},
+        "SomeMoney.negative": {},
+        "SomeMoney.positive": {},
+        "SomeMoney.round": {
+            "ndigits": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "SomeMoney.add": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "SomeMoney.scalar_add": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "SomeMoney.subtract": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "SomeMoney.scalar_subtract": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "SomeMoney.multiply": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "SomeMoney.divide": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "SomeMoney.floor_divide": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "SomeMoney.lt": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "SomeMoney.lte": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "SomeMoney.gt": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "SomeMoney.gte": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "SomeMoney.with_ccy": {
+            "ccy": {
+                "value": "Currency",
+                "is_user_defined": true
+            }
+        },
+        "SomeMoney.with_qty": {
+            "qty": {
+                "value": "Decimal",
+                "is_user_defined": false
+            }
+        },
+        "SomeMoney.with_dov": {
+            "dov": {
+                "value": "Date",
+                "is_user_defined": false
+            }
+        },
+        "SomeMoney.convert": {
+            "to": {
+                "value": "Currency",
+                "is_user_defined": true
+            },
+            "asof": {
+                "value": "Optional[Date]",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "SomeMoney.price": {},
+        "NoneMoney.as_boolean": {},
+        "NoneMoney.is_equal": {
+            "other": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "NoneMoney.abs": {},
+        "NoneMoney.as_float": {},
+        "NoneMoney.as_integer": {},
+        "NoneMoney.round": {
+            "ndigits": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "NoneMoney.negative": {},
+        "NoneMoney.positive": {},
+        "NoneMoney.add": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "NoneMoney.scalar_add": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "NoneMoney.subtract": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "NoneMoney.scalar_subtract": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "NoneMoney.multiply": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "NoneMoney.divide": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "NoneMoney.floor_divide": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "NoneMoney.lt": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "NoneMoney.lte": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "NoneMoney.gt": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "NoneMoney.gte": {
+            "other": {
+                "value": "'Money'",
+                "is_user_defined": false
+            }
+        },
+        "NoneMoney.with_ccy": {
+            "ccy": {
+                "value": "Currency",
+                "is_user_defined": true
+            }
+        },
+        "NoneMoney.with_qty": {
+            "qty": {
+                "value": "Decimal",
+                "is_user_defined": false
+            }
+        },
+        "NoneMoney.with_dov": {
+            "dov": {
+                "value": "Date",
+                "is_user_defined": false
+            }
+        },
+        "NoneMoney.convert": {
+            "to": {
+                "value": "Currency",
+                "is_user_defined": true
+            },
+            "asof": {
+                "value": "Optional[Date]",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "NoneMoney.price": {},
+        "Price.is_equal": {
+            "other": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Price.as_boolean": {},
+        "Price.as_float": {},
+        "Price.as_integer": {},
+        "Price.abs": {},
+        "Price.negative": {},
+        "Price.positive": {},
+        "Price.round": {
+            "ndigits": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Price.add": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "Price.scalar_add": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "Price.subtract": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "Price.scalar_subtract": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "Price.multiply": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "Price.times": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "Price.divide": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "Price.floor_divide": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "Price.lt": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "Price.lte": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "Price.gt": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "Price.gte": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "Price.with_ccy": {
+            "ccy": {
+                "value": "Currency",
+                "is_user_defined": true
+            }
+        },
+        "Price.with_qty": {
+            "qty": {
+                "value": "Decimal",
+                "is_user_defined": false
+            }
+        },
+        "Price.with_dov": {
+            "dov": {
+                "value": "Date",
+                "is_user_defined": false
+            }
+        },
+        "Price.convert": {
+            "to": {
+                "value": "Currency",
+                "is_user_defined": true
+            },
+            "asof": {
+                "value": "Optional[Date]",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Price.money": {},
+        "Price.of": {
+            "ccy": {
+                "value": "Optional[Currency]",
+                "is_user_defined": true
+            },
+            "qty": {
+                "value": "Optional[Decimal]",
+                "is_user_defined": false
+            },
+            "dov": {
+                "value": "Optional[Date]",
+                "is_user_defined": false
+            }
+        },
+        "Price.__bool__": {},
+        "Price.__eq__": {
+            "other": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Price.__abs__": {},
+        "Price.__float__": {},
+        "Price.__int__": {},
+        "Price.__round__": {
+            "ndigits": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            }
+        },
+        "Price.__neg__": {},
+        "Price.__pos__": {},
+        "Price.__add__": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "Price.__sub__": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "Price.__mul__": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "Price.__truediv__": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "Price.__floordiv__": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "Price.__lt__": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "Price.__le__": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "Price.__gt__": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "Price.__ge__": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "SomePrice.is_equal": {
+            "other": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "SomePrice.as_boolean": {},
+        "SomePrice.as_float": {},
+        "SomePrice.as_integer": {},
+        "SomePrice.abs": {},
+        "SomePrice.negative": {},
+        "SomePrice.positive": {},
+        "SomePrice.round": {
+            "ndigits": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "SomePrice.add": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "SomePrice.scalar_add": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "SomePrice.subtract": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "SomePrice.scalar_subtract": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "SomePrice.multiply": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "SomePrice.times": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "SomePrice.divide": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "SomePrice.floor_divide": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "SomePrice.lt": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "SomePrice.lte": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "SomePrice.gt": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "SomePrice.gte": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "SomePrice.with_ccy": {
+            "ccy": {
+                "value": "Currency",
+                "is_user_defined": true
+            }
+        },
+        "SomePrice.with_qty": {
+            "qty": {
+                "value": "Decimal",
+                "is_user_defined": false
+            }
+        },
+        "SomePrice.with_dov": {
+            "dov": {
+                "value": "Date",
+                "is_user_defined": false
+            }
+        },
+        "SomePrice.convert": {
+            "to": {
+                "value": "Currency",
+                "is_user_defined": true
+            },
+            "asof": {
+                "value": "Optional[Date]",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "SomePrice.money": {},
+        "NonePrice.as_boolean": {},
+        "NonePrice.is_equal": {
+            "other": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "NonePrice.abs": {},
+        "NonePrice.as_float": {},
+        "NonePrice.as_integer": {},
+        "NonePrice.round": {
+            "ndigits": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "NonePrice.negative": {},
+        "NonePrice.positive": {},
+        "NonePrice.add": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "NonePrice.scalar_add": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "NonePrice.subtract": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "NonePrice.scalar_subtract": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "NonePrice.multiply": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "NonePrice.times": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "NonePrice.divide": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "NonePrice.floor_divide": {
+            "other": {
+                "value": "Numeric",
+                "is_user_defined": false
+            }
+        },
+        "NonePrice.lt": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "NonePrice.lte": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "NonePrice.gt": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "NonePrice.gte": {
+            "other": {
+                "value": "'Price'",
+                "is_user_defined": false
+            }
+        },
+        "NonePrice.with_ccy": {
+            "ccy": {
+                "value": "Currency",
+                "is_user_defined": true
+            }
+        },
+        "NonePrice.with_qty": {
+            "qty": {
+                "value": "Decimal",
+                "is_user_defined": false
+            }
+        },
+        "NonePrice.with_dov": {
+            "dov": {
+                "value": "Date",
+                "is_user_defined": false
+            }
+        },
+        "NonePrice.convert": {
+            "to": {
+                "value": "Currency",
+                "is_user_defined": true
+            },
+            "asof": {
+                "value": "Optional[Date]",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        }
+    },
+    "pypara": {},
+    "pypara.accounting.accounts": {
+        "AccountType.__lt__": {
+            "other": {
+                "value": "'AccountType'",
+                "is_user_defined": false
+            }
+        },
+        "Account.code": {},
+        "Account.name": {},
+        "Account.type": {},
+        "Account.coa": {},
+        "Account.parent": {},
+        "RootAccount.parent": {},
+        "SubAccount.type": {},
+        "SubAccount.coa": {},
+        "COA.__post_init__": {
+            "rootspec": {
+                "value": "Optional[Dict[AccountType, Tuple[Code, str]]]",
+                "is_user_defined": true
+            }
+        },
+        "COA.__iter__": {},
+        "COA.accounts": {},
+        "COA.toplevel": {},
+        "COA.structure": {},
+        "COA.find": {
+            "code": {
+                "value": "Code",
+                "is_user_defined": false
+            }
+        },
+        "COA.subaccounts": {
+            "account": {
+                "value": "Account",
+                "is_user_defined": true
+            }
+        },
+        "COA.nodify": {
+            "account": {
+                "value": "Account",
+                "is_user_defined": true
+            }
+        },
+        "COA.add": {
+            "parent": {
+                "value": "Code",
+                "is_user_defined": false
+            },
+            "code": {
+                "value": "Code",
+                "is_user_defined": false
+            },
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "COA.print": {},
+        "COA._print_node": {
+            "node": {
+                "value": "'COA.Node'",
+                "is_user_defined": false
+            },
+            "level": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "ReadChartOfAccounts.__call__": {}
+    },
+    "pypara.accounting.generic": {},
+    "pypara.accounting.journaling": {
+        "Direction.of": {
+            "quantity": {
+                "value": "Quantity",
+                "is_user_defined": false
+            }
+        },
+        "Posting.is_debit": {},
+        "Posting.is_credit": {},
+        "JournalEntry.increments": {},
+        "JournalEntry.decrements": {},
+        "JournalEntry.debits": {},
+        "JournalEntry.credits": {},
+        "JournalEntry.post": {
+            "date": {
+                "value": "datetime.date",
+                "is_user_defined": false
+            },
+            "account": {
+                "value": "Account",
+                "is_user_defined": true
+            },
+            "quantity": {
+                "value": "Quantity",
+                "is_user_defined": false
+            }
+        },
+        "JournalEntry.validate": {},
+        "ReadJournalEntries.__call__": {
+            "period": {
+                "value": "DateRange",
+                "is_user_defined": true
+            }
+        }
+    },
+    "pypara.accounting.ledger": {
+        "build_general_ledger": {
+            "period": {
+                "value": "DateRange",
+                "is_user_defined": true
+            },
+            "journal": {
+                "value": "Iterable[JournalEntry[_T]]",
+                "is_user_defined": true
+            },
+            "initial": {
+                "value": "InitialBalances",
+                "is_user_defined": false
+            }
+        },
+        "compile_general_ledger_program": {
+            "read_initial_balances": {
+                "value": "ReadInitialBalances",
+                "is_user_defined": true
+            },
+            "read_journal_entries": {
+                "value": "ReadJournalEntries[_T]",
+                "is_user_defined": true
+            }
+        },
+        "LedgerEntry.date": {},
+        "LedgerEntry.description": {},
+        "LedgerEntry.amount": {},
+        "LedgerEntry.cntraccts": {},
+        "LedgerEntry.is_debit": {},
+        "LedgerEntry.is_credit": {},
+        "LedgerEntry.debit": {},
+        "LedgerEntry.credit": {},
+        "Ledger._last_balance": {},
+        "Ledger.add": {
+            "posting": {
+                "value": "Posting[_T]",
+                "is_user_defined": true
+            }
+        },
+        "ReadInitialBalances.__call__": {
+            "period": {
+                "value": "DateRange",
+                "is_user_defined": true
+            }
+        },
+        "GeneralLedgerProgram.__call__": {
+            "period": {
+                "value": "DateRange",
+                "is_user_defined": true
+            }
+        },
+        "compile_general_ledger_program._program": {
+            "period": {
+                "value": "DateRange",
+                "is_user_defined": true
+            }
+        }
+    },
+    "pypara.accounting": {},
+    "pypara.commons.errors": {
+        "ProgrammingError.passert": {
+            "condition": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "message": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            }
+        }
+    },
+    "pypara.commons.numbers": {
+        "make_quantizer": {
+            "precision": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "isum": {
+            "xs": {
+                "value": "Iterable[DecimalLike]",
+                "is_user_defined": false
+            },
+            "start": {
+                "value": "Optional[DecimalLike]",
+                "is_user_defined": false
+            }
+        }
+    },
+    "pypara.commons.others": {
+        "makeguid": {},
+        "identity": {
+            "x": {
+                "value": "_T",
+                "is_user_defined": false
+            }
+        }
+    },
+    "pypara.commons.zeitgeist": {},
+    "pypara.commons": {}
+}

@@ -1,0 +1,185 @@
+{
+    "sty.lib": {
+        "mute": {
+            "objects": {
+                "value": "Register",
+                "is_user_defined": true
+            }
+        },
+        "unmute": {
+            "objects": {
+                "value": "Register",
+                "is_user_defined": true
+            }
+        }
+    },
+    "sty.primitive": {
+        "_render_rules": {
+            "renderfuncs": {
+                "value": "Renderfuncs",
+                "is_user_defined": false
+            },
+            "rules": {
+                "value": "Iterable[StylingRule]",
+                "is_user_defined": false
+            }
+        },
+        "Style.__new__": {
+            "value": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "rules": {
+                "value": "StylingRule",
+                "is_user_defined": false
+            }
+        },
+        "Register.__init__": {},
+        "Register.__setattr__": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "value": {
+                "value": "Style",
+                "is_user_defined": true
+            }
+        },
+        "Register.__call__": {
+            "args": {
+                "value": "Union[int, str]",
+                "is_user_defined": false
+            }
+        },
+        "Register.set_eightbit_call": {
+            "rendertype": {
+                "value": "Type[RenderType]",
+                "is_user_defined": true
+            }
+        },
+        "Register.set_rgb_call": {
+            "rendertype": {
+                "value": "Type[RenderType]",
+                "is_user_defined": true
+            }
+        },
+        "Register.set_renderfunc": {
+            "rendertype": {
+                "value": "Type[RenderType]",
+                "is_user_defined": true
+            },
+            "func": {
+                "value": "Callable",
+                "is_user_defined": false
+            }
+        },
+        "Register.mute": {},
+        "Register.unmute": {},
+        "Register.as_dict": {},
+        "Register.as_namedtuple": {},
+        "Register.copy": {}
+    },
+    "sty.register": {
+        "EfRegister.__init__": {},
+        "FgRegister.__init__": {},
+        "BgRegister.__init__": {},
+        "RsRegister.__init__": {}
+    },
+    "sty.renderfunc": {
+        "sgr": {
+            "num": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "eightbit_fg": {
+            "num": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "eightbit_bg": {
+            "num": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "rgb_fg": {
+            "r": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "g": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "b": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "rgb_bg": {
+            "r": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "g": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "b": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        }
+    },
+    "sty.rendertype": {
+        "Sgr.__init__": {
+            "num": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "EightbitFg.__init__": {
+            "num": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "EightbitBg.__init__": {
+            "num": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "RgbFg.__init__": {
+            "r": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "g": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "b": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "RgbBg.__init__": {
+            "r": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "g": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "b": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        }
+    },
+    "sty": {}
+}

@@ -1,0 +1,225 @@
+{
+    "pytutils.debug": {
+        "interact": {}
+    },
+    "pytutils.env": {
+        "expand": {
+            "val": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "parse_env_file_contents": {
+            "lines": {
+                "value": "Iterable[str]",
+                "is_user_defined": false
+            }
+        },
+        "load_env_file": {
+            "lines": {
+                "value": "Iterable[str]",
+                "is_user_defined": false
+            },
+            "write_environ": {
+                "value": "MutableMapping",
+                "is_user_defined": false
+            }
+        }
+    },
+    "pytutils.excs": {
+        "ok": {}
+    },
+    "pytutils.files": {
+        "islurp": {},
+        "burp": {}
+    },
+    "pytutils.iters": {
+        "accumulate": {},
+        "consume": {},
+        "dedupe_iter": {},
+        "dedupe": {}
+    },
+    "pytutils.log": {
+        "_namespace_from_calling_context": {},
+        "configure": {},
+        "get_config": {},
+        "_ensure_configured": {},
+        "get_logger": {},
+        "logger_level": {}
+    },
+    "pytutils.mappings": {
+        "format_dict_recursively": {},
+        "AttrDict.__init__": {},
+        "ProxyMutableMapping.__init__": {},
+        "ProxyMutableMapping.__repr__": {},
+        "ProxyMutableMapping._set_mapping": {},
+        "ProxyMutableMapping.__contains__": {},
+        "ProxyMutableMapping.__getitem__": {},
+        "ProxyMutableMapping.__setitem__": {},
+        "ProxyMutableMapping.__delitem__": {},
+        "ProxyMutableMapping.__iter__": {},
+        "ProxyMutableMapping.__len__": {},
+        "HookableProxyMutableMapping.__init__": {},
+        "HookableProxyMutableMapping.__key_trans__": {},
+        "HookableProxyMutableMapping.__key_allowed__": {},
+        "HookableProxyMutableMapping.__iter__": {},
+        "HookableProxyMutableMapping.__contains__": {},
+        "HookableProxyMutableMapping.__getitem__": {},
+        "HookableProxyMutableMapping.__setitem__": {},
+        "HookableProxyMutableMapping.__delitem__": {},
+        "PrefixedProxyMutableMapping.__init__": {},
+        "PrefixedProxyMutableMapping.__key_trans__": {},
+        "PrefixedProxyMutableMapping.__key_allowed__": {},
+        "PrefixedProxyMutableMapping.__key_add_prefix__": {},
+        "PrefixedProxyMutableMapping.__key_remove_prefix__": {},
+        "MultiDict.__setitem__": {},
+        "ProxyMutableAttrDict.__init__": {},
+        "ProxyMutableAttrDict._wrap_as": {},
+        "ProxyMutableAttrDict.__getattr__": {},
+        "ProxyMutableAttrDict.__setattr__": {},
+        "ProcessLocal.__init__": {},
+        "ProcessLocal.__key_trans__": {},
+        "ProcessLocal._handle_pid": {},
+        "LastUpdatedOrderedDict.__setitem__": {},
+        "OrderedCounter.__repr__": {},
+        "OrderedCounter.__reduce__": {}
+    },
+    "pytutils.memo": {
+        "cachedmethod": {},
+        "lazyproperty": {},
+        "CachedException.__init__": {},
+        "CachedException.throw": {},
+        "cachedmethod.decorator": {},
+        "lazyproperty._lazyprop": {}
+    },
+    "pytutils.meth": {
+        "bind": {}
+    },
+    "pytutils.path": {
+        "join_each": {}
+    },
+    "pytutils.pretty": {
+        "pf": {},
+        "pp": {}
+    },
+    "pytutils.props": {
+        "lazyperclassproperty": {},
+        "lazyclassproperty": {},
+        "roclassproperty.__init__": {},
+        "roclassproperty.__get__": {},
+        "setterproperty.__init__": {},
+        "setterproperty.__set__": {},
+        "lazyperclassproperty._lazyclassprop": {},
+        "lazyclassproperty._lazyclassprop": {}
+    },
+    "pytutils.python": {
+        "X.__len__": {}
+    },
+    "pytutils.pythree": {
+        "ensure_encoded_bytes": {},
+        "ensure_decoded_text": {}
+    },
+    "pytutils.queues": {
+        "multiplex": {},
+        "push": {},
+        "merge": {},
+        "multiplex.f": {}
+    },
+    "pytutils.rand": {
+        "rand_hex": {}
+    },
+    "pytutils.sets": {
+        "MetaSet.__attrs_post_init__": {},
+        "MetaSet.__contains__": {},
+        "MetaSet.__iter__": {},
+        "MetaSet.__len__": {},
+        "MetaSet.add": {},
+        "MetaSet.discard": {},
+        "MetaSet.update": {},
+        "MetaSet._asdict": {},
+        "TimedValueSet.added_at": {}
+    },
+    "pytutils.timers": {
+        "Timer.__init__": {},
+        "Timer.__repr__": {},
+        "Timer.__enter__": {},
+        "Timer.__exit__": {}
+    },
+    "pytutils.tlds": {
+        "split_domain_into_subdomains": {},
+        "split_domain_into_subdomains.join_dom": {}
+    },
+    "pytutils.trees": {
+        "get_tree_node": {},
+        "set_tree_node": {},
+        "tree": {},
+        "Tree.__init__": {},
+        "Tree._namespace_key": {},
+        "Tree.__setitem__": {},
+        "Tree.__getitem__": {}
+    },
+    "pytutils.urls": {
+        "update_query_params": {}
+    },
+    "pytutils": {},
+    "pytutils.ext.rwclassproperty": {
+        "ClassPropertyMeta.__setattr__": {},
+        "rwclassproperty.__init__": {},
+        "rwclassproperty.__get__": {},
+        "rwclassproperty.__set__": {},
+        "rwclassproperty.setter": {},
+        "rwclassproperty._fix_function": {},
+        "TestClassProperty.test_get_set": {},
+        "TestClassProperty.test_read_only": {},
+        "TestClassProperty.test_proper_metaclass": {}
+    },
+    "pytutils.lazy.lazy_import": {
+        "disallow_proxying": {},
+        "lazy_import": {},
+        "IllegalUseOfScopeReplacer.__init__": {},
+        "IllegalUseOfScopeReplacer._format": {},
+        "IllegalUseOfScopeReplacer.__unicode__": {},
+        "IllegalUseOfScopeReplacer.__str__": {},
+        "IllegalUseOfScopeReplacer.__repr__": {},
+        "IllegalUseOfScopeReplacer._get_format_string": {},
+        "IllegalUseOfScopeReplacer.__eq__": {},
+        "ScopeReplacer.__init__": {},
+        "ScopeReplacer._resolve": {},
+        "ScopeReplacer.__getattribute__": {},
+        "ScopeReplacer.__setattr__": {},
+        "ScopeReplacer.__call__": {},
+        "ImportReplacer.__init__": {},
+        "ImportReplacer._import": {},
+        "ImportProcessor.__init__": {},
+        "ImportProcessor.lazy_import": {},
+        "ImportProcessor._convert_imports": {},
+        "ImportProcessor._build_map": {},
+        "ImportProcessor._convert_import_str": {},
+        "ImportProcessor._convert_from_str": {},
+        "ImportProcessor._canonicalize_import_text": {}
+    },
+    "pytutils.lazy.lazy_regex": {
+        "lazy_compile": {},
+        "install_lazy_compile": {},
+        "reset_compile": {},
+        "InvalidPattern.__init__": {},
+        "InvalidPattern._format": {},
+        "InvalidPattern.__unicode__": {},
+        "InvalidPattern.__str__": {},
+        "InvalidPattern.__repr__": {},
+        "InvalidPattern._get_format_string": {},
+        "InvalidPattern.__eq__": {},
+        "LazyRegex.__init__": {},
+        "LazyRegex._compile_and_collapse": {},
+        "LazyRegex._real_re_compile": {},
+        "LazyRegex.__getstate__": {},
+        "LazyRegex.__setstate__": {},
+        "LazyRegex.__getattr__": {},
+        "finditer_public": {}
+    },
+    "pytutils.lazy.simple_import": {
+        "make_lazy": {},
+        "NonLocal.__init__": {}
+    },
+    "pytutils.lazy": {}
+}

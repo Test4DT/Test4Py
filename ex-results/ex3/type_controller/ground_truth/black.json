@@ -1,0 +1,825 @@
+{
+    "blib2to3.pygram": {
+        "initialize": {
+            "cache_dir": {
+                "value": "Union[str, 'os.PathLike[str]', None]",
+                "is_user_defined": false
+            }
+        },
+        "Symbols.__init__": {
+            "grammar": {
+                "value": "Grammar",
+                "is_user_defined": true
+            }
+        }
+    },
+    "blib2to3.pytree": {
+        "type_repr": {
+            "type_num": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "convert": {
+            "gr": {
+                "value": "Grammar",
+                "is_user_defined": true
+            },
+            "raw_node": {
+                "value": "RawNode",
+                "is_user_defined": false
+            }
+        },
+        "generate_matches": {
+            "patterns": {
+                "value": "List[BasePattern]",
+                "is_user_defined": true
+            },
+            "nodes": {
+                "value": "List[NL]",
+                "is_user_defined": false
+            }
+        },
+        "Base.__new__": {},
+        "Base.__eq__": {
+            "other": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Base.prefix": {},
+        "Base._eq": {
+            "other": {
+                "value": "_P",
+                "is_user_defined": false
+            }
+        },
+        "Base.clone": {},
+        "Base.post_order": {},
+        "Base.pre_order": {},
+        "Base.replace": {
+            "new": {
+                "value": "Union[NL, List[NL]]",
+                "is_user_defined": false
+            }
+        },
+        "Base.get_lineno": {},
+        "Base.changed": {},
+        "Base.remove": {},
+        "Base.next_sibling": {},
+        "Base.prev_sibling": {},
+        "Base.leaves": {},
+        "Base.depth": {},
+        "Base.get_suffix": {},
+        "Node.__init__": {
+            "type": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "children": {
+                "value": "List[NL]",
+                "is_user_defined": false
+            },
+            "context": {
+                "value": "Optional[Any]",
+                "is_user_defined": false
+            },
+            "prefix": {
+                "value": "Optional[Text]",
+                "is_user_defined": false
+            },
+            "fixers_applied": {
+                "value": "Optional[List[Any]]",
+                "is_user_defined": false
+            }
+        },
+        "Node.__repr__": {},
+        "Node.__str__": {},
+        "Node._eq": {},
+        "Node.clone": {},
+        "Node.post_order": {},
+        "Node.pre_order": {},
+        "Node.prefix": {},
+        "Node.set_child": {
+            "i": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "child": {
+                "value": "NL",
+                "is_user_defined": false
+            }
+        },
+        "Node.insert_child": {
+            "i": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "child": {
+                "value": "NL",
+                "is_user_defined": false
+            }
+        },
+        "Node.append_child": {
+            "child": {
+                "value": "NL",
+                "is_user_defined": false
+            }
+        },
+        "Node.invalidate_sibling_maps": {},
+        "Node.update_sibling_maps": {},
+        "Leaf.__init__": {
+            "type": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "value": {
+                "value": "Text",
+                "is_user_defined": false
+            },
+            "context": {
+                "value": "Optional[Context]",
+                "is_user_defined": false
+            },
+            "prefix": {
+                "value": "Optional[Text]",
+                "is_user_defined": false
+            },
+            "fixers_applied": {
+                "value": "List[Any]",
+                "is_user_defined": false
+            }
+        },
+        "Leaf.__repr__": {},
+        "Leaf.__str__": {},
+        "Leaf._eq": {},
+        "Leaf.clone": {},
+        "Leaf.leaves": {},
+        "Leaf.post_order": {},
+        "Leaf.pre_order": {},
+        "Leaf.prefix": {},
+        "BasePattern.__new__": {},
+        "BasePattern.__repr__": {},
+        "BasePattern._submatch": {},
+        "BasePattern.optimize": {},
+        "BasePattern.match": {
+            "node": {
+                "value": "NL",
+                "is_user_defined": false
+            },
+            "results": {
+                "value": "Optional[_Results]",
+                "is_user_defined": false
+            }
+        },
+        "BasePattern.match_seq": {
+            "nodes": {
+                "value": "List[NL]",
+                "is_user_defined": false
+            },
+            "results": {
+                "value": "Optional[_Results]",
+                "is_user_defined": false
+            }
+        },
+        "BasePattern.generate_matches": {
+            "nodes": {
+                "value": "List[NL]",
+                "is_user_defined": false
+            }
+        },
+        "LeafPattern.__init__": {
+            "type": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            },
+            "content": {
+                "value": "Optional[Text]",
+                "is_user_defined": false
+            },
+            "name": {
+                "value": "Optional[Text]",
+                "is_user_defined": false
+            }
+        },
+        "LeafPattern.match": {
+            "node": {
+                "value": "NL",
+                "is_user_defined": false
+            }
+        },
+        "LeafPattern._submatch": {},
+        "NodePattern.__init__": {
+            "type": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            },
+            "content": {
+                "value": "Optional[Iterable[Text]]",
+                "is_user_defined": false
+            },
+            "name": {
+                "value": "Optional[Text]",
+                "is_user_defined": false
+            }
+        },
+        "NodePattern._submatch": {},
+        "WildcardPattern.__init__": {
+            "content": {
+                "value": "Optional[Text]",
+                "is_user_defined": false
+            },
+            "min": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "max": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "name": {
+                "value": "Optional[Text]",
+                "is_user_defined": false
+            }
+        },
+        "WildcardPattern.optimize": {},
+        "WildcardPattern.match": {},
+        "WildcardPattern.match_seq": {},
+        "WildcardPattern.generate_matches": {},
+        "WildcardPattern._iterative_matches": {},
+        "WildcardPattern._bare_name_matches": {},
+        "WildcardPattern._recursive_matches": {},
+        "NegatedPattern.__init__": {
+            "content": {
+                "value": "Optional[Any]",
+                "is_user_defined": false
+            }
+        },
+        "NegatedPattern.match": {},
+        "NegatedPattern.match_seq": {},
+        "NegatedPattern.generate_matches": {}
+    },
+    "blib2to3.test_temp": {
+        "bar": {}
+    },
+    "blib2to3": {},
+    "blib2to3.pgen2.conv": {
+        "Converter.run": {},
+        "Converter.parse_graminit_h": {},
+        "Converter.parse_graminit_c": {},
+        "Converter.finish_off": {}
+    },
+    "blib2to3.pgen2.driver": {
+        "_generate_pickle_name": {
+            "gt": {
+                "value": "Path",
+                "is_user_defined": false
+            },
+            "cache_dir": {
+                "value": "Optional[Path]",
+                "is_user_defined": false
+            }
+        },
+        "load_grammar": {
+            "gt": {
+                "value": "Text",
+                "is_user_defined": false
+            },
+            "gp": {
+                "value": "Optional[Text]",
+                "is_user_defined": false
+            },
+            "save": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "force": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "logger": {
+                "value": "Optional[Logger]",
+                "is_user_defined": false
+            }
+        },
+        "_newer": {
+            "a": {
+                "value": "Text",
+                "is_user_defined": false
+            },
+            "b": {
+                "value": "Text",
+                "is_user_defined": false
+            }
+        },
+        "load_packaged_grammar": {
+            "package": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "grammar_source": {
+                "value": "Text",
+                "is_user_defined": false
+            },
+            "cache_dir": {
+                "value": "Optional[Path]",
+                "is_user_defined": false
+            }
+        },
+        "main": {
+            "args": {
+                "value": "Text",
+                "is_user_defined": false
+            }
+        },
+        "Driver.__init__": {
+            "grammar": {
+                "value": "Grammar",
+                "is_user_defined": true
+            },
+            "convert": {
+                "value": "Optional[_Convert]",
+                "is_user_defined": false
+            },
+            "logger": {
+                "value": "Optional[Logger]",
+                "is_user_defined": false
+            }
+        },
+        "Driver.parse_tokens": {
+            "tokens": {
+                "value": "Iterable[Any]",
+                "is_user_defined": false
+            },
+            "debug": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Driver.parse_stream_raw": {
+            "stream": {
+                "value": "IO[Text]",
+                "is_user_defined": false
+            },
+            "debug": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Driver.parse_stream": {
+            "stream": {
+                "value": "IO[Text]",
+                "is_user_defined": false
+            },
+            "debug": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Driver.parse_file": {
+            "filename": {
+                "value": "Path",
+                "is_user_defined": false
+            },
+            "encoding": {
+                "value": "Optional[Text]",
+                "is_user_defined": false
+            },
+            "debug": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Driver.parse_string": {
+            "text": {
+                "value": "Text",
+                "is_user_defined": false
+            },
+            "debug": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Driver._partially_consume_prefix": {
+            "prefix": {
+                "value": "Text",
+                "is_user_defined": false
+            },
+            "column": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        }
+    },
+    "blib2to3.pgen2.grammar": {
+        "Grammar.__init__": {},
+        "Grammar.dump": {
+            "filename": {
+                "value": "Path",
+                "is_user_defined": false
+            }
+        },
+        "Grammar._update": {
+            "attrs": {
+                "value": "Dict[str, Any]",
+                "is_user_defined": false
+            }
+        },
+        "Grammar.load": {
+            "filename": {
+                "value": "Path",
+                "is_user_defined": false
+            }
+        },
+        "Grammar.loads": {
+            "pkl": {
+                "value": "bytes",
+                "is_user_defined": false
+            }
+        },
+        "Grammar.copy": {},
+        "Grammar.report": {}
+    },
+    "blib2to3.pgen2.literals": {
+        "escape": {
+            "m": {
+                "value": "Match[Text]",
+                "is_user_defined": false
+            }
+        },
+        "evalString": {
+            "s": {
+                "value": "Text",
+                "is_user_defined": false
+            }
+        },
+        "test": {}
+    },
+    "blib2to3.pgen2.parse": {
+        "lam_sub": {
+            "grammar": {
+                "value": "Grammar",
+                "is_user_defined": true
+            },
+            "node": {
+                "value": "RawNode",
+                "is_user_defined": false
+            }
+        },
+        "ParseError.__init__": {
+            "msg": {
+                "value": "Text",
+                "is_user_defined": false
+            },
+            "type": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            },
+            "value": {
+                "value": "Optional[Text]",
+                "is_user_defined": false
+            },
+            "context": {
+                "value": "Context",
+                "is_user_defined": false
+            }
+        },
+        "Parser.__init__": {
+            "grammar": {
+                "value": "Grammar",
+                "is_user_defined": true
+            },
+            "convert": {
+                "value": "Optional[Convert]",
+                "is_user_defined": false
+            }
+        },
+        "Parser.setup": {
+            "start": {
+                "value": "Optional[int]",
+                "is_user_defined": false
+            }
+        },
+        "Parser.addtoken": {
+            "type": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "value": {
+                "value": "Optional[Text]",
+                "is_user_defined": false
+            },
+            "context": {
+                "value": "Context",
+                "is_user_defined": false
+            }
+        },
+        "Parser.classify": {
+            "type": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "value": {
+                "value": "Optional[Text]",
+                "is_user_defined": false
+            },
+            "context": {
+                "value": "Context",
+                "is_user_defined": false
+            }
+        },
+        "Parser.shift": {
+            "type": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "value": {
+                "value": "Optional[Text]",
+                "is_user_defined": false
+            },
+            "newstate": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "context": {
+                "value": "Context",
+                "is_user_defined": false
+            }
+        },
+        "Parser.push": {
+            "type": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "newdfa": {
+                "value": "DFAS",
+                "is_user_defined": false
+            },
+            "newstate": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "context": {
+                "value": "Context",
+                "is_user_defined": false
+            }
+        },
+        "Parser.pop": {}
+    },
+    "blib2to3.pgen2.pgen": {
+        "generate_grammar": {
+            "filename": {
+                "value": "Path",
+                "is_user_defined": false
+            }
+        },
+        "ParserGenerator.__init__": {
+            "filename": {
+                "value": "Path",
+                "is_user_defined": false
+            },
+            "stream": {
+                "value": "Optional[IO[Text]]",
+                "is_user_defined": false
+            }
+        },
+        "ParserGenerator.make_grammar": {},
+        "ParserGenerator.make_first": {
+            "c": {
+                "value": "PgenGrammar",
+                "is_user_defined": true
+            },
+            "name": {
+                "value": "Text",
+                "is_user_defined": false
+            }
+        },
+        "ParserGenerator.make_label": {
+            "c": {
+                "value": "PgenGrammar",
+                "is_user_defined": true
+            },
+            "label": {
+                "value": "Text",
+                "is_user_defined": false
+            }
+        },
+        "ParserGenerator.addfirstsets": {},
+        "ParserGenerator.calcfirst": {
+            "name": {
+                "value": "Text",
+                "is_user_defined": false
+            }
+        },
+        "ParserGenerator.parse": {},
+        "ParserGenerator.make_dfa": {
+            "start": {
+                "value": "'NFAState'",
+                "is_user_defined": false
+            },
+            "finish": {
+                "value": "'NFAState'",
+                "is_user_defined": false
+            }
+        },
+        "ParserGenerator.dump_nfa": {
+            "name": {
+                "value": "Text",
+                "is_user_defined": false
+            },
+            "start": {
+                "value": "'NFAState'",
+                "is_user_defined": false
+            },
+            "finish": {
+                "value": "'NFAState'",
+                "is_user_defined": false
+            }
+        },
+        "ParserGenerator.dump_dfa": {
+            "name": {
+                "value": "Text",
+                "is_user_defined": false
+            },
+            "dfa": {
+                "value": "Sequence['DFAState']",
+                "is_user_defined": false
+            }
+        },
+        "ParserGenerator.simplify_dfa": {
+            "dfa": {
+                "value": "List['DFAState']",
+                "is_user_defined": false
+            }
+        },
+        "ParserGenerator.parse_rhs": {},
+        "ParserGenerator.parse_alt": {},
+        "ParserGenerator.parse_item": {},
+        "ParserGenerator.parse_atom": {},
+        "ParserGenerator.expect": {
+            "type": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "value": {
+                "value": "Optional[Any]",
+                "is_user_defined": false
+            }
+        },
+        "ParserGenerator.gettoken": {},
+        "ParserGenerator.raise_error": {
+            "msg": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "args": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "NFAState.__init__": {},
+        "NFAState.addarc": {
+            "next": {
+                "value": "'NFAState'",
+                "is_user_defined": false
+            },
+            "label": {
+                "value": "Optional[Text]",
+                "is_user_defined": false
+            }
+        },
+        "DFAState.__init__": {
+            "nfaset": {
+                "value": "Dict[NFAState, Any]",
+                "is_user_defined": true
+            },
+            "final": {
+                "value": "NFAState",
+                "is_user_defined": true
+            }
+        },
+        "DFAState.addarc": {
+            "next": {
+                "value": "'DFAState'",
+                "is_user_defined": false
+            },
+            "label": {
+                "value": "Text",
+                "is_user_defined": false
+            }
+        },
+        "DFAState.unifystate": {
+            "old": {
+                "value": "'DFAState'",
+                "is_user_defined": false
+            },
+            "new": {
+                "value": "'DFAState'",
+                "is_user_defined": false
+            }
+        },
+        "DFAState.__eq__": {
+            "other": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        }
+    },
+    "blib2to3.pgen2.token": {
+        "ISTERMINAL": {
+            "x": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "ISNONTERMINAL": {
+            "x": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "ISEOF": {
+            "x": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        }
+    },
+    "blib2to3.pgen2.tokenize": {
+        "group": {},
+        "any": {},
+        "maybe": {},
+        "_combinations": {},
+        "printtoken": {},
+        "tokenize": {
+            "readline": {
+                "value": "Callable[[], Text]",
+                "is_user_defined": false
+            },
+            "tokeneater": {
+                "value": "TokenEater",
+                "is_user_defined": false
+            }
+        },
+        "tokenize_loop": {},
+        "_get_normal_name": {
+            "orig_enc": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "detect_encoding": {
+            "readline": {
+                "value": "Callable[[], bytes]",
+                "is_user_defined": false
+            }
+        },
+        "untokenize": {
+            "iterable": {
+                "value": "Iterable[TokenInfo]",
+                "is_user_defined": false
+            }
+        },
+        "generate_tokens": {
+            "readline": {
+                "value": "Callable[[], Text]",
+                "is_user_defined": false
+            },
+            "grammar": {
+                "value": "Optional[Grammar]",
+                "is_user_defined": true
+            }
+        },
+        "Untokenizer.__init__": {},
+        "Untokenizer.add_whitespace": {
+            "start": {
+                "value": "Coord",
+                "is_user_defined": false
+            }
+        },
+        "Untokenizer.untokenize": {
+            "iterable": {
+                "value": "Iterable[TokenInfo]",
+                "is_user_defined": false
+            }
+        },
+        "Untokenizer.compat": {
+            "token": {
+                "value": "Tuple[int, Text]",
+                "is_user_defined": false
+            },
+            "iterable": {
+                "value": "Iterable[TokenInfo]",
+                "is_user_defined": false
+            }
+        },
+        "detect_encoding.read_or_stop": {},
+        "detect_encoding.find_cookie": {
+            "line": {
+                "value": "bytes",
+                "is_user_defined": false
+            }
+        }
+    },
+    "blib2to3.pgen2": {}
+}

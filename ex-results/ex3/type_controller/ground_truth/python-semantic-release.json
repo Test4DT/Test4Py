@@ -1,0 +1,744 @@
+{
+    "semantic_release.ci_checks": {
+        "checker": {
+            "func": {
+                "value": "Callable",
+                "is_user_defined": false
+            }
+        },
+        "travis": {
+            "branch": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "semaphore": {
+            "branch": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "frigg": {
+            "branch": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "circle": {
+            "branch": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "gitlab": {
+            "branch": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "bitbucket": {
+            "branch": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "jenkins": {
+            "branch": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "check": {
+            "branch": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "checker.func_wrapper": {}
+    },
+    "semantic_release.cli": {
+        "common_options": {},
+        "print_version": {},
+        "version": {},
+        "should_bump_version": {},
+        "bump_version": {},
+        "changelog": {},
+        "publish": {},
+        "filter_output_for_secrets": {},
+        "entry": {},
+        "main": {},
+        "cmd_publish": {},
+        "cmd_changelog": {},
+        "cmd_version": {},
+        "cmd_print_version": {}
+    },
+    "semantic_release.dist": {
+        "should_build": {},
+        "should_remove_dist": {},
+        "build_dists": {},
+        "remove_dists": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "semantic_release.errors": {},
+    "semantic_release.helpers": {
+        "format_arg": {},
+        "build_requests_session": {
+            "retry": {
+                "value": "Union[bool, int, Retry]",
+                "is_user_defined": false
+            }
+        },
+        "LoggedFunction.__init__": {},
+        "LoggedFunction.__call__": {}
+    },
+    "semantic_release.hvcs": {
+        "_fix_mime_types": {},
+        "get_hvcs": {},
+        "check_build_status": {
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "repository": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "ref": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "post_changelog": {
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "repository": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "version": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "changelog": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "upload_to_release": {
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "repository": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "version": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "get_token": {},
+        "get_domain": {},
+        "check_token": {},
+        "Base.domain": {},
+        "Base.api_url": {},
+        "Base.token": {},
+        "Base.check_build_status": {
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "repo": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "ref": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Base.post_release_changelog": {
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "repo": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "version": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "changelog": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Base.upload_dists": {
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "repo": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "version": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "TokenAuth.__init__": {},
+        "TokenAuth.__eq__": {},
+        "TokenAuth.__ne__": {},
+        "TokenAuth.__call__": {},
+        "Github.domain": {},
+        "Github.api_url": {},
+        "Github.token": {},
+        "Github.auth": {},
+        "Github.session": {
+            "retry": {
+                "value": "Union[Retry, bool, int]",
+                "is_user_defined": false
+            }
+        },
+        "Github.check_build_status": {
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "repo": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "ref": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Github.create_release": {
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "repo": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "tag": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "changelog": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Github.get_release": {
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "repo": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "tag": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Github.edit_release": {
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "repo": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "id": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "changelog": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Github.post_release_changelog": {
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "repo": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "version": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "changelog": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Github.upload_asset": {
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "repo": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "release_id": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "file": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "label": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Github.upload_dists": {
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "repo": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "version": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Gitlab.domain": {},
+        "Gitlab.api_url": {},
+        "Gitlab.token": {},
+        "Gitlab.check_build_status": {
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "repo": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "ref": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Gitlab.post_release_changelog": {
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "repo": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "version": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "changelog": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "semantic_release.pypi": {
+        "upload_to_pypi": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "skip_existing": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "glob_patterns": {
+                "value": "List[str]",
+                "is_user_defined": false
+            }
+        }
+    },
+    "semantic_release.settings": {
+        "_config": {},
+        "_config_from_ini": {},
+        "_config_from_pyproject": {},
+        "current_commit_parser": {},
+        "current_changelog_components": {},
+        "overload_configuration": {},
+        "overload_configuration.wrap": {}
+    },
+    "semantic_release.vcs_helpers": {
+        "check_repo": {},
+        "get_commit_log": {},
+        "get_last_version": {},
+        "get_version_from_tag": {
+            "tag_name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "get_repository_owner_and_name": {},
+        "get_current_head_hash": {},
+        "commit_new_version": {
+            "version": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "update_changelog_file": {
+            "version": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "content_to_add": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "tag_new_version": {
+            "version": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "push_new_version": {
+            "auth_token": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "branch": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "domain": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "checkout": {
+            "branch": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "check_repo.function_wrapper": {},
+        "get_last_version.version_finder": {}
+    },
+    "semantic_release": {
+        "setup_hook": {
+            "argv": {
+                "value": "list",
+                "is_user_defined": false
+            }
+        }
+    },
+    "semantic_release.__main__": {},
+    "semantic_release.changelog.changelog": {
+        "add_pr_link": {
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "repo_name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "message": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "get_changelog_sections": {
+            "changelog": {
+                "value": "dict",
+                "is_user_defined": false
+            },
+            "changelog_sections": {
+                "value": "list",
+                "is_user_defined": false
+            }
+        },
+        "get_hash_link": {
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "repo_name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "hash_": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "changelog_headers": {
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "repo_name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "changelog": {
+                "value": "dict",
+                "is_user_defined": false
+            },
+            "changelog_sections": {
+                "value": "list",
+                "is_user_defined": false
+            }
+        },
+        "changelog_table": {
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "repo_name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "changelog": {
+                "value": "dict",
+                "is_user_defined": false
+            },
+            "changelog_sections": {
+                "value": "list",
+                "is_user_defined": false
+            }
+        }
+    },
+    "semantic_release.changelog.compare": {
+        "get_github_compare_url": {
+            "from_version": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "to_version": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "compare_url": {
+            "version": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "previous_version": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "semantic_release.changelog": {
+        "markdown_changelog": {
+            "owner": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "repo_name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "version": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "changelog": {
+                "value": "dict",
+                "is_user_defined": false
+            },
+            "header": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "previous_version": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "semantic_release.history.logs": {
+        "evaluate_version_bump": {
+            "current_version": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "force": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "generate_changelog": {
+            "from_version": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "to_version": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "semantic_release.history.parser_angular": {
+        "parse_commit_message": {
+            "message": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "semantic_release.history.parser_emoji": {
+        "parse_commit_message": {
+            "message": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "semantic_release.history.parser_helpers": {
+        "parse_paragraphs": {
+            "text": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "semantic_release.history.parser_tag": {
+        "parse_commit_message": {
+            "message": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "semantic_release.history": {
+        "get_current_version_by_tag": {},
+        "get_current_version_by_config_file": {},
+        "get_current_version": {},
+        "get_new_version": {
+            "current_version": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "level_bump": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "get_previous_version": {
+            "version": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "set_new_version": {
+            "new_version": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "load_version_declarations": {},
+        "VersionDeclaration.__init__": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "VersionDeclaration.from_toml": {
+            "config_str": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "VersionDeclaration.from_variable": {
+            "config_str": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "VersionDeclaration.from_pattern": {
+            "config_str": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "VersionDeclaration.parse": {},
+        "VersionDeclaration.replace": {
+            "new_version": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "TomlVersionDeclaration.__init__": {},
+        "TomlVersionDeclaration._read": {},
+        "TomlVersionDeclaration.parse": {},
+        "TomlVersionDeclaration.replace": {
+            "new_version": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "PatternVersionDeclaration.__init__": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "pattern": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "PatternVersionDeclaration.parse": {},
+        "PatternVersionDeclaration.replace": {
+            "new_version": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "load_version_declarations.iter_fields": {}
+    }
+}

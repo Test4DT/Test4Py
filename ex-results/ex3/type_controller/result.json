@@ -1,0 +1,72 @@
+{
+    "test4dt": {
+        "is_user_defined_success": 141,
+        "not_user_defined_success": 1230,
+        "is_user_defined_failed": 81,
+        "not_user_defined_failed": 576,
+        "exact_is_user_defined_success": 81,
+        "exact_not_user_defined_success": 1006,
+        "exact_is_user_defined_failed": 141,
+        "exact_not_user_defined_failed": 800
+    },
+    "test4dt_se": {
+        "is_user_defined_success": 137,
+        "not_user_defined_success": 1238,
+        "is_user_defined_failed": 85,
+        "not_user_defined_failed": 568,
+        "exact_is_user_defined_success": 80,
+        "exact_not_user_defined_success": 1001,
+        "exact_is_user_defined_failed": 142,
+        "exact_not_user_defined_failed": 805
+    },
+    "test4dt_be": {
+        "is_user_defined_success": 117,
+        "not_user_defined_success": 1222,
+        "is_user_defined_failed": 105,
+        "not_user_defined_failed": 584,
+        "exact_is_user_defined_success": 67,
+        "exact_not_user_defined_success": 992,
+        "exact_is_user_defined_failed": 155,
+        "exact_not_user_defined_failed": 814
+    },
+    "llm-with-summary": {
+        "is_user_defined_success": 94,
+        "not_user_defined_success": 1212,
+        "is_user_defined_failed": 128,
+        "not_user_defined_failed": 594,
+        "exact_is_user_defined_success": 47,
+        "exact_not_user_defined_success": 974,
+        "exact_is_user_defined_failed": 175,
+        "exact_not_user_defined_failed": 832
+    },
+    "llm-only": {
+        "is_user_defined_success": 99,
+        "not_user_defined_success": 1221,
+        "is_user_defined_failed": 123,
+        "not_user_defined_failed": 585,
+        "exact_is_user_defined_success": 53,
+        "exact_not_user_defined_success": 986,
+        "exact_is_user_defined_failed": 169,
+        "exact_not_user_defined_failed": 820
+    },
+    "hityper": {
+        "is_user_defined_success": 1,
+        "not_user_defined_success": 259,
+        "is_user_defined_failed": 221,
+        "not_user_defined_failed": 1547,
+        "exact_is_user_defined_success": 0,
+        "exact_not_user_defined_success": 246,
+        "exact_is_user_defined_failed": 222,
+        "exact_not_user_defined_failed": 1560
+    },
+    "type4py": {
+        "is_user_defined_success": 31,
+        "not_user_defined_success": 852,
+        "is_user_defined_failed": 191,
+        "not_user_defined_failed": 947,
+        "exact_is_user_defined_success": 23,
+        "exact_not_user_defined_success": 751,
+        "exact_is_user_defined_failed": 199,
+        "exact_not_user_defined_failed": 1048
+    }
+}

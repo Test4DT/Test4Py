@@ -1,0 +1,994 @@
+{
+    "httpie.client": {
+        "collect_messages": {
+            "args": {
+                "value": "argparse.Namespace",
+                "is_user_defined": false
+            },
+            "config_dir": {
+                "value": "Path",
+                "is_user_defined": false
+            },
+            "request_body_read_callback": {
+                "value": "Callable[[bytes], None]",
+                "is_user_defined": false
+            }
+        },
+        "max_headers": {},
+        "build_requests_session": {
+            "verify": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "ssl_version": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "ciphers": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "dump_request": {
+            "kwargs": {
+                "value": "dict",
+                "is_user_defined": false
+            }
+        },
+        "finalize_headers": {
+            "headers": {
+                "value": "RequestHeadersDict",
+                "is_user_defined": true
+            }
+        },
+        "make_default_headers": {
+            "args": {
+                "value": "argparse.Namespace",
+                "is_user_defined": false
+            }
+        },
+        "make_send_kwargs": {
+            "args": {
+                "value": "argparse.Namespace",
+                "is_user_defined": false
+            }
+        },
+        "make_send_kwargs_mergeable_from_env": {
+            "args": {
+                "value": "argparse.Namespace",
+                "is_user_defined": false
+            }
+        },
+        "make_request_kwargs": {
+            "args": {
+                "value": "argparse.Namespace",
+                "is_user_defined": false
+            },
+            "base_headers": {
+                "value": "RequestHeadersDict",
+                "is_user_defined": true
+            }
+        },
+        "ensure_path_as_is": {
+            "orig_url": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "prepped_url": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "httpie.compat": {},
+    "httpie.config": {
+        "get_default_config_dir": {},
+        "BaseConfigDict.__init__": {
+            "path": {
+                "value": "Path",
+                "is_user_defined": false
+            }
+        },
+        "BaseConfigDict.ensure_directory": {},
+        "BaseConfigDict.is_new": {},
+        "BaseConfigDict.load": {},
+        "BaseConfigDict.save": {},
+        "BaseConfigDict.delete": {},
+        "Config.__init__": {
+            "directory": {
+                "value": "Union[str, Path]",
+                "is_user_defined": false
+            }
+        },
+        "Config.default_options": {}
+    },
+    "httpie.context": {
+        "Environment.__init__": {},
+        "Environment.__str__": {},
+        "Environment.__repr__": {},
+        "Environment.config": {},
+        "Environment.devnull": {},
+        "Environment.log_error": {}
+    },
+    "httpie.core": {
+        "main": {
+            "args": {
+                "value": "List[Union[str, bytes]]",
+                "is_user_defined": false
+            }
+        },
+        "get_output_options": {
+            "args": {
+                "value": "argparse.Namespace",
+                "is_user_defined": false
+            },
+            "message": {
+                "value": "Union[requests.PreparedRequest, requests.Response]",
+                "is_user_defined": false
+            }
+        },
+        "program": {
+            "args": {
+                "value": "argparse.Namespace",
+                "is_user_defined": false
+            },
+            "env": {
+                "value": "Environment",
+                "is_user_defined": true
+            }
+        },
+        "print_debug_info": {
+            "env": {
+                "value": "Environment",
+                "is_user_defined": true
+            }
+        },
+        "decode_raw_args": {
+            "args": {
+                "value": "List[Union[str, bytes]]",
+                "is_user_defined": false
+            },
+            "stdin_encoding": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "program.separate": {},
+        "program.request_body_read_callback": {
+            "chunk": {
+                "value": "bytes",
+                "is_user_defined": false
+            }
+        }
+    },
+    "httpie.downloads": {
+        "parse_content_range": {
+            "content_range": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "resumed_from": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "filename_from_content_disposition": {
+            "content_disposition": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "filename_from_url": {
+            "url": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "content_type": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            }
+        },
+        "trim_filename": {
+            "filename": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "max_len": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "get_filename_max_length": {
+            "directory": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "trim_filename_if_needed": {
+            "filename": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "get_unique_filename": {
+            "filename": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Downloader.__init__": {
+            "output_file": {
+                "value": "IO",
+                "is_user_defined": false
+            },
+            "resume": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "progress_file": {
+                "value": "IO",
+                "is_user_defined": false
+            }
+        },
+        "Downloader.pre_request": {
+            "request_headers": {
+                "value": "dict",
+                "is_user_defined": false
+            }
+        },
+        "Downloader.start": {
+            "initial_url": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "final_response": {
+                "value": "requests.Response",
+                "is_user_defined": false
+            }
+        },
+        "Downloader.finish": {},
+        "Downloader.failed": {},
+        "Downloader.interrupted": {},
+        "Downloader.chunk_downloaded": {
+            "chunk": {
+                "value": "bytes",
+                "is_user_defined": false
+            }
+        },
+        "Downloader._get_output_file_from_response": {
+            "initial_url": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "final_response": {
+                "value": "requests.Response",
+                "is_user_defined": false
+            }
+        },
+        "DownloadStatus.__init__": {},
+        "DownloadStatus.started": {},
+        "DownloadStatus.chunk_downloaded": {},
+        "DownloadStatus.has_finished": {},
+        "DownloadStatus.finished": {},
+        "ProgressReporterThread.__init__": {
+            "status": {
+                "value": "DownloadStatus",
+                "is_user_defined": true
+            },
+            "output": {
+                "value": "IO",
+                "is_user_defined": false
+            }
+        },
+        "ProgressReporterThread.stop": {},
+        "ProgressReporterThread.run": {},
+        "ProgressReporterThread.report_speed": {},
+        "ProgressReporterThread.sum_up": {}
+    },
+    "httpie.models": {
+        "HTTPMessage.__init__": {},
+        "HTTPMessage.iter_body": {
+            "chunk_size": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "HTTPMessage.iter_lines": {
+            "chunk_size": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "HTTPMessage.headers": {},
+        "HTTPMessage.encoding": {},
+        "HTTPMessage.body": {},
+        "HTTPMessage.content_type": {},
+        "HTTPResponse.iter_body": {},
+        "HTTPResponse.iter_lines": {},
+        "HTTPResponse.headers": {},
+        "HTTPResponse.encoding": {},
+        "HTTPResponse.body": {},
+        "HTTPRequest.iter_body": {},
+        "HTTPRequest.iter_lines": {},
+        "HTTPRequest.headers": {},
+        "HTTPRequest.encoding": {},
+        "HTTPRequest.body": {}
+    },
+    "httpie.sessions": {
+        "get_httpie_session": {
+            "config_dir": {
+                "value": "Path",
+                "is_user_defined": false
+            },
+            "session_name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "host": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            },
+            "url": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Session.__init__": {
+            "path": {
+                "value": "Union[str, Path]",
+                "is_user_defined": false
+            }
+        },
+        "Session.update_headers": {
+            "request_headers": {
+                "value": "RequestHeadersDict",
+                "is_user_defined": true
+            }
+        },
+        "Session.headers": {},
+        "Session.cookies": {
+            "jar": {
+                "value": "RequestsCookieJar",
+                "is_user_defined": false
+            }
+        },
+        "Session.auth": {
+            "auth": {
+                "value": "dict",
+                "is_user_defined": false
+            }
+        },
+        "Session.remove_cookies": {
+            "names": {
+                "value": "Iterable[str]",
+                "is_user_defined": false
+            }
+        }
+    },
+    "httpie.ssl": {
+        "HTTPieHTTPSAdapter.__init__": {
+            "verify": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "ssl_version": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "ciphers": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "HTTPieHTTPSAdapter.init_poolmanager": {},
+        "HTTPieHTTPSAdapter.proxy_manager_for": {},
+        "HTTPieHTTPSAdapter._create_ssl_context": {
+            "verify": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "ssl_version": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "ciphers": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "httpie.status": {
+        "http_status_to_exit_status": {
+            "http_status": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        }
+    },
+    "httpie.uploads": {
+        "prepare_request_body": {
+            "body": {
+                "value": "Union[str, bytes, IO, MultipartEncoder, RequestDataDict]",
+                "is_user_defined": true
+            },
+            "body_read_callback": {
+                "value": "Callable[[bytes], bytes]",
+                "is_user_defined": false
+            },
+            "content_length_header_value": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "get_multipart_data_and_content_type": {
+            "data": {
+                "value": "MultipartRequestDataDict",
+                "is_user_defined": true
+            },
+            "boundary": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "content_type": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "compress_request": {
+            "request": {
+                "value": "requests.PreparedRequest",
+                "is_user_defined": false
+            },
+            "always": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "ChunkedUploadStream.__init__": {
+            "stream": {
+                "value": "Iterable",
+                "is_user_defined": false
+            },
+            "callback": {
+                "value": "Callable",
+                "is_user_defined": false
+            }
+        },
+        "ChunkedUploadStream.__iter__": {},
+        "ChunkedMultipartUploadStream.__init__": {
+            "encoder": {
+                "value": "MultipartEncoder",
+                "is_user_defined": false
+            }
+        },
+        "ChunkedMultipartUploadStream.__iter__": {},
+        "new_read": {}
+    },
+    "httpie.utils": {
+        "load_json_preserve_order": {},
+        "repr_dict": {
+            "d": {
+                "value": "dict",
+                "is_user_defined": false
+            }
+        },
+        "humanize_bytes": {},
+        "get_content_type": {},
+        "get_expired_cookies": {
+            "headers": {
+                "value": "List[Tuple[str, str]]",
+                "is_user_defined": false
+            },
+            "now": {
+                "value": "float",
+                "is_user_defined": false
+            }
+        },
+        "_max_age_to_expires": {},
+        "ExplicitNullAuth.__call__": {},
+        "get_expired_cookies.is_expired": {
+            "expires": {
+                "value": "Optional[float]",
+                "is_user_defined": false
+            }
+        }
+    },
+    "httpie": {},
+    "httpie.__main__": {
+        "main": {}
+    },
+    "httpie.cli.argparser": {
+        "HTTPieHelpFormatter.__init__": {},
+        "HTTPieHelpFormatter._split_lines": {},
+        "HTTPieArgumentParser.__init__": {},
+        "HTTPieArgumentParser.parse_args": {
+            "env": {
+                "value": "Environment",
+                "is_user_defined": true
+            }
+        },
+        "HTTPieArgumentParser._process_request_type": {},
+        "HTTPieArgumentParser._process_url": {},
+        "HTTPieArgumentParser._print_message": {},
+        "HTTPieArgumentParser._setup_standard_streams": {},
+        "HTTPieArgumentParser._process_auth": {},
+        "HTTPieArgumentParser._apply_no_options": {},
+        "HTTPieArgumentParser._body_from_file": {},
+        "HTTPieArgumentParser._guess_method": {},
+        "HTTPieArgumentParser._parse_items": {},
+        "HTTPieArgumentParser._process_output_options": {},
+        "HTTPieArgumentParser._process_pretty_options": {},
+        "HTTPieArgumentParser._process_download_options": {},
+        "HTTPieArgumentParser._process_format_options": {}
+    },
+    "httpie.cli.argtypes": {
+        "readable_file_arg": {},
+        "parse_format_options": {
+            "s": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "defaults": {
+                "value": "Optional[dict]",
+                "is_user_defined": false
+            }
+        },
+        "KeyValueArg.__init__": {
+            "key": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "value": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            },
+            "sep": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "orig": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "KeyValueArg.__eq__": {
+            "other": {
+                "value": "'KeyValueArg'",
+                "is_user_defined": false
+            }
+        },
+        "KeyValueArg.__repr__": {},
+        "SessionNameValidator.__init__": {
+            "error_message": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "SessionNameValidator.__call__": {
+            "value": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Escaped.__repr__": {},
+        "KeyValueArgType.__init__": {
+            "separators": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "KeyValueArgType.__call__": {
+            "s": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "KeyValueArgType.tokenize": {
+            "s": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "AuthCredentials.has_password": {},
+        "AuthCredentials.prompt_password": {
+            "host": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "AuthCredentials._getpass": {},
+        "AuthCredentialsArgType.__call__": {}
+    },
+    "httpie.cli.constants": {},
+    "httpie.cli.definition": {
+        "_AuthTypeLazyChoices.__contains__": {},
+        "_AuthTypeLazyChoices.__iter__": {}
+    },
+    "httpie.cli.dicts": {
+        "MultiValueOrderedDict.__setitem__": {},
+        "MultiValueOrderedDict.items": {}
+    },
+    "httpie.cli.exceptions": {},
+    "httpie.cli.requestitems": {
+        "process_header_arg": {
+            "arg": {
+                "value": "KeyValueArg",
+                "is_user_defined": true
+            }
+        },
+        "process_empty_header_arg": {
+            "arg": {
+                "value": "KeyValueArg",
+                "is_user_defined": true
+            }
+        },
+        "process_query_param_arg": {
+            "arg": {
+                "value": "KeyValueArg",
+                "is_user_defined": true
+            }
+        },
+        "process_file_upload_arg": {
+            "arg": {
+                "value": "KeyValueArg",
+                "is_user_defined": true
+            }
+        },
+        "process_data_item_arg": {
+            "arg": {
+                "value": "KeyValueArg",
+                "is_user_defined": true
+            }
+        },
+        "process_data_embed_file_contents_arg": {
+            "arg": {
+                "value": "KeyValueArg",
+                "is_user_defined": true
+            }
+        },
+        "process_data_embed_raw_json_file_arg": {
+            "arg": {
+                "value": "KeyValueArg",
+                "is_user_defined": true
+            }
+        },
+        "process_data_raw_json_embed_arg": {
+            "arg": {
+                "value": "KeyValueArg",
+                "is_user_defined": true
+            }
+        },
+        "load_text_file": {
+            "item": {
+                "value": "KeyValueArg",
+                "is_user_defined": true
+            }
+        },
+        "load_json": {
+            "arg": {
+                "value": "KeyValueArg",
+                "is_user_defined": true
+            },
+            "contents": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "RequestItems.__init__": {},
+        "RequestItems.from_args": {
+            "request_item_args": {
+                "value": "List[KeyValueArg]",
+                "is_user_defined": true
+            }
+        }
+    },
+    "httpie.cli": {},
+    "httpie.output.processing": {
+        "is_valid_mime": {},
+        "Conversion.get_converter": {
+            "mime": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Formatting.__init__": {
+            "groups": {
+                "value": "List[str]",
+                "is_user_defined": false
+            }
+        },
+        "Formatting.format_headers": {
+            "headers": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Formatting.format_body": {
+            "content": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "mime": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "httpie.output.streams": {
+        "BaseStream.__init__": {
+            "msg": {
+                "value": "HTTPMessage",
+                "is_user_defined": true
+            },
+            "on_body_chunk_downloaded": {
+                "value": "Callable[[bytes], None]",
+                "is_user_defined": false
+            }
+        },
+        "BaseStream.get_headers": {},
+        "BaseStream.iter_body": {},
+        "BaseStream.__iter__": {},
+        "RawStream.__init__": {},
+        "RawStream.iter_body": {},
+        "EncodedStream.__init__": {},
+        "EncodedStream.iter_body": {},
+        "PrettyStream.__init__": {
+            "conversion": {
+                "value": "Conversion",
+                "is_user_defined": true
+            },
+            "formatting": {
+                "value": "Formatting",
+                "is_user_defined": true
+            }
+        },
+        "PrettyStream.get_headers": {},
+        "PrettyStream.iter_body": {},
+        "PrettyStream.process_body": {
+            "chunk": {
+                "value": "Union[str, bytes]",
+                "is_user_defined": false
+            }
+        },
+        "BufferedPrettyStream.iter_body": {}
+    },
+    "httpie.output.writer": {
+        "write_message": {
+            "requests_message": {
+                "value": "Union[requests.PreparedRequest, requests.Response]",
+                "is_user_defined": false
+            },
+            "env": {
+                "value": "Environment",
+                "is_user_defined": true
+            },
+            "args": {
+                "value": "argparse.Namespace",
+                "is_user_defined": false
+            }
+        },
+        "write_stream": {
+            "stream": {
+                "value": "BaseStream",
+                "is_user_defined": true
+            },
+            "outfile": {
+                "value": "Union[IO, TextIO]",
+                "is_user_defined": false
+            },
+            "flush": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "write_stream_with_colors_win_py3": {
+            "stream": {
+                "value": "'BaseStream'",
+                "is_user_defined": false
+            },
+            "outfile": {
+                "value": "TextIO",
+                "is_user_defined": false
+            },
+            "flush": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "build_output_stream_for_message": {
+            "args": {
+                "value": "argparse.Namespace",
+                "is_user_defined": false
+            },
+            "env": {
+                "value": "Environment",
+                "is_user_defined": true
+            },
+            "requests_message": {
+                "value": "Union[requests.PreparedRequest, requests.Response]",
+                "is_user_defined": false
+            },
+            "with_headers": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "with_body": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "get_stream_type_and_kwargs": {
+            "env": {
+                "value": "Environment",
+                "is_user_defined": true
+            },
+            "args": {
+                "value": "argparse.Namespace",
+                "is_user_defined": false
+            }
+        }
+    },
+    "httpie.output": {},
+    "httpie.output.formatters.colors": {
+        "get_lexer": {
+            "mime": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "ColorFormatter.__init__": {
+            "env": {
+                "value": "Environment",
+                "is_user_defined": true
+            }
+        },
+        "ColorFormatter.format_headers": {
+            "headers": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "ColorFormatter.format_body": {
+            "body": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "mime": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "ColorFormatter.get_lexer_for_body": {
+            "mime": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "body": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "ColorFormatter.get_style_class": {
+            "color_scheme": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "httpie.output.formatters.headers": {
+        "HeadersFormatter.__init__": {},
+        "HeadersFormatter.format_headers": {
+            "headers": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "httpie.output.formatters.json": {
+        "JSONFormatter.__init__": {},
+        "JSONFormatter.format_body": {
+            "body": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "mime": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "httpie.output.formatters": {},
+    "httpie.plugins.base": {
+        "AuthPlugin.get_auth": {},
+        "TransportPlugin.get_adapter": {},
+        "ConverterPlugin.__init__": {},
+        "ConverterPlugin.convert": {},
+        "ConverterPlugin.supports": {},
+        "FormatterPlugin.__init__": {},
+        "FormatterPlugin.format_headers": {
+            "headers": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "FormatterPlugin.format_body": {
+            "content": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "mime": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "httpie.plugins.builtin": {
+        "HTTPBasicAuth.__call__": {
+            "request": {
+                "value": "requests.PreparedRequest",
+                "is_user_defined": false
+            }
+        },
+        "HTTPBasicAuth.make_header": {
+            "username": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "password": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "BasicAuthPlugin.get_auth": {
+            "username": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "password": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "DigestAuthPlugin.get_auth": {
+            "username": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "password": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "httpie.plugins.manager": {
+        "PluginManager.register": {
+            "plugins": {
+                "value": "Type[BasePlugin]",
+                "is_user_defined": true
+            }
+        },
+        "PluginManager.unregister": {
+            "plugin": {
+                "value": "Type[BasePlugin]",
+                "is_user_defined": true
+            }
+        },
+        "PluginManager.filter": {},
+        "PluginManager.load_installed_plugins": {},
+        "PluginManager.get_auth_plugins": {},
+        "PluginManager.get_auth_plugin_mapping": {},
+        "PluginManager.get_auth_plugin": {
+            "auth_type": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "PluginManager.get_formatters": {},
+        "PluginManager.get_formatters_grouped": {},
+        "PluginManager.get_converters": {},
+        "PluginManager.get_transport_plugins": {},
+        "PluginManager.__repr__": {}
+    },
+    "httpie.plugins.registry": {},
+    "httpie.plugins": {}
+}

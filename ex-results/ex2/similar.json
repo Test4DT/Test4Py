@@ -1,0 +1,398 @@
+{
+    "deepseek": {
+        "apimd": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "blib2to3": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "codetiming": {
+            "score": 14.341911764705882,
+            "num": 20,
+            "percent": 0.7170955882352941
+        },
+        "dataclasses_json": {
+            "score": 111.84436794566888,
+            "num": 265,
+            "percent": 0.42205421866290144
+        },
+        "docstring_parser": {
+            "score": 75.05601382013009,
+            "num": 139,
+            "percent": 0.5399713224469791
+        },
+        "flutes": {
+            "score": 134.74575163398674,
+            "num": 169,
+            "percent": 0.7973121398460754
+        },
+        "httpie": {
+            "score": 236.90564865513227,
+            "num": 294,
+            "percent": 0.8058015260378648
+        },
+        "isort": {
+            "score": 373.7237490729947,
+            "num": 445,
+            "percent": 0.8398286496022352
+        },
+        "mimesis": {
+            "score": 659.9797608527452,
+            "num": 844,
+            "percent": 0.7819665412947219
+        },
+        "py_backwards": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "pymonet": {
+            "score": 372.3528744558305,
+            "num": 507,
+            "percent": 0.7344238154947347
+        },
+        "pypara": {
+            "score": 220.13843581633088,
+            "num": 312,
+            "percent": 0.7055719096677272
+        },
+        "semantic_release": {
+            "score": 133.84901805710626,
+            "num": 163,
+            "percent": 0.8211596199822471
+        },
+        "string_utils": {
+            "score": 90.38826859553836,
+            "num": 175,
+            "percent": 0.5165043919745049
+        },
+        "pytutils": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "sty": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "typesystem": {
+            "score": 255.93415107465287,
+            "num": 401,
+            "percent": 0.6382397782410296
+        },
+        "dfsql": {
+            "score": 297.1351560719983,
+            "num": 372,
+            "percent": 0.7987504195483826
+        },
+        "genty": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "kafkashell": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "pycg": {
+            "score": 1249.4112318840557,
+            "num": 1464,
+            "percent": 0.8534229725983987
+        },
+        "pymssa": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "pypykatz_server": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "pyrthon": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "superstring": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "woa": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        }
+    },
+    "gpt-4o": {
+        "apimd": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "blib2to3": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "codetiming": {
+            "score": 23.014776333550227,
+            "num": 37,
+            "percent": 0.622020981987844
+        },
+        "dataclasses_json": {
+            "score": 69.33586236253858,
+            "num": 151,
+            "percent": 0.4591778964406528
+        },
+        "docstring_parser": {
+            "score": 40.127243892852654,
+            "num": 90,
+            "percent": 0.4458582654761406
+        },
+        "flutes": {
+            "score": 256.0477124183009,
+            "num": 336,
+            "percent": 0.762046763149705
+        },
+        "httpie": {
+            "score": 374.64252739219864,
+            "num": 482,
+            "percent": 0.7772666543406611
+        },
+        "isort": {
+            "score": 544.6894508915982,
+            "num": 657,
+            "percent": 0.8290554808091297
+        },
+        "mimesis": {
+            "score": 510.41297533067956,
+            "num": 635,
+            "percent": 0.8037999611506764
+        },
+        "py_backwards": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "pymonet": {
+            "score": 163.0052901991905,
+            "num": 296,
+            "percent": 0.5506935479702382
+        },
+        "pypara": {
+            "score": 382.5257263880318,
+            "num": 557,
+            "percent": 0.6867607296014934
+        },
+        "semantic_release": {
+            "score": 205.22231383511559,
+            "num": 257,
+            "percent": 0.7985304040276872
+        },
+        "string_utils": {
+            "score": 89.14945582556369,
+            "num": 155,
+            "percent": 0.5751577795197658
+        },
+        "pytutils": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "sty": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "typesystem": {
+            "score": 172.77745034825543,
+            "num": 311,
+            "percent": 0.5555545027275094
+        },
+        "dfsql": {
+            "score": 259.95103668261527,
+            "num": 340,
+            "percent": 0.7645618725959272
+        },
+        "genty": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "kafkashell": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "pycg": {
+            "score": 513.0760869565245,
+            "num": 685,
+            "percent": 0.749016185337992
+        },
+        "pymssa": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "pypykatz_server": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "pyrthon": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "superstring": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "woa": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        }
+    },
+    "qwen": {
+        "apimd": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "blib2to3": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "codetiming": {
+            "score": 11.080939156462572,
+            "num": 22,
+            "percent": 0.5036790525664805
+        },
+        "dataclasses_json": {
+            "score": 36.96502307867879,
+            "num": 72,
+            "percent": 0.5134030983149832
+        },
+        "docstring_parser": {
+            "score": 19.22564272986198,
+            "num": 39,
+            "percent": 0.49296519820158924
+        },
+        "flutes": {
+            "score": 118.25832399626508,
+            "num": 150,
+            "percent": 0.7883888266417671
+        },
+        "httpie": {
+            "score": 182.38841198874414,
+            "num": 226,
+            "percent": 0.8070283716316112
+        },
+        "isort": {
+            "score": 269.867991112238,
+            "num": 325,
+            "percent": 0.8303630495761168
+        },
+        "mimesis": {
+            "score": 260.4188528994988,
+            "num": 352,
+            "percent": 0.7398262866463035
+        },
+        "py_backwards": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "pymonet": {
+            "score": 68.89226652342495,
+            "num": 102,
+            "percent": 0.6754143776806367
+        },
+        "pypara": {
+            "score": 161.39597541824645,
+            "num": 245,
+            "percent": 0.6587590833397814
+        },
+        "semantic_release": {
+            "score": 115.41267848164907,
+            "num": 138,
+            "percent": 0.836323757113399
+        },
+        "string_utils": {
+            "score": 68.68863753719577,
+            "num": 100,
+            "percent": 0.6868863753719577
+        },
+        "pytutils": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "sty": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "typesystem": {
+            "score": 79.30070657904429,
+            "num": 126,
+            "percent": 0.6293706871352721
+        },
+        "dfsql": {
+            "score": 103.23815219867856,
+            "num": 143,
+            "percent": 0.7219451202704794
+        },
+        "genty": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "kafkashell": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "pycg": {
+            "score": 149.91497584541077,
+            "num": 225,
+            "percent": 0.6662887815351589
+        },
+        "pymssa": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "pypykatz_server": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "pyrthon": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "superstring": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        },
+        "woa": {
+            "score": 0,
+            "num": 0,
+            "percent": 0
+        }
+    }
+}

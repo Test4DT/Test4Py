@@ -1,0 +1,794 @@
+{
+    "py_backwards.compiler": {
+        "_transform": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "code": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "target": {
+                "value": "CompilationTarget",
+                "is_user_defined": false
+            }
+        },
+        "_compile_file": {
+            "paths": {
+                "value": "InputOutput",
+                "is_user_defined": false
+            },
+            "target": {
+                "value": "CompilationTarget",
+                "is_user_defined": false
+            }
+        },
+        "compile_files": {
+            "input_": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "output": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "target": {
+                "value": "CompilationTarget",
+                "is_user_defined": false
+            },
+            "root": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            }
+        }
+    },
+    "py_backwards.conf": {
+        "init_settings": {
+            "args": {
+                "value": "Namespace",
+                "is_user_defined": false
+            }
+        },
+        "Settings.__init__": {}
+    },
+    "py_backwards.const": {},
+    "py_backwards.exceptions": {
+        "CompilationError.__init__": {
+            "filename": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "code": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "lineno": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "offset": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "TransformationError.__init__": {
+            "filename": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "transformer": {
+                "value": "'Type[BaseTransformer]'",
+                "is_user_defined": false
+            },
+            "ast": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "traceback": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "py_backwards.files": {
+        "get_input_output_paths": {
+            "input_": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "output": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "root": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            }
+        }
+    },
+    "py_backwards.main": {
+        "main": {}
+    },
+    "py_backwards.messages": {
+        "_format_line": {
+            "line": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "n": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "padding": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "_get_lines_with_highlighted_error": {
+            "e": {
+                "value": "CompilationError",
+                "is_user_defined": true
+            }
+        },
+        "syntax_error": {
+            "e": {
+                "value": "CompilationError",
+                "is_user_defined": true
+            }
+        },
+        "transformation_error": {
+            "e": {
+                "value": "TransformationError",
+                "is_user_defined": true
+            }
+        },
+        "input_doesnt_exists": {
+            "input_": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "invalid_output": {
+            "input_": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "output": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "permission_error": {
+            "output": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "compilation_result": {
+            "result": {
+                "value": "CompilationResult",
+                "is_user_defined": false
+            }
+        },
+        "warn": {
+            "message": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "debug": {
+            "message": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "py_backwards.types": {},
+    "py_backwards": {},
+    "py_backwards.transformers.base": {
+        "import_rewrite": {},
+        "BaseTransformer.transform": {
+            "tree": {
+                "value": "ast.AST",
+                "is_user_defined": false
+            }
+        },
+        "BaseNodeTransformer.__init__": {
+            "tree": {
+                "value": "ast.AST",
+                "is_user_defined": false
+            }
+        },
+        "BaseNodeTransformer.transform": {
+            "tree": {
+                "value": "ast.AST",
+                "is_user_defined": false
+            }
+        },
+        "BaseImportRewrite._get_matched_rewrite": {
+            "name": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            }
+        },
+        "BaseImportRewrite._replace_import": {
+            "node": {
+                "value": "ast.Import",
+                "is_user_defined": false
+            },
+            "from_": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "to": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "BaseImportRewrite.visit_Import": {
+            "node": {
+                "value": "ast.Import",
+                "is_user_defined": false
+            }
+        },
+        "BaseImportRewrite._replace_import_from_module": {
+            "node": {
+                "value": "ast.ImportFrom",
+                "is_user_defined": false
+            },
+            "from_": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "to": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "BaseImportRewrite._get_names_to_replace": {
+            "node": {
+                "value": "ast.ImportFrom",
+                "is_user_defined": false
+            }
+        },
+        "BaseImportRewrite._get_replaced_import_from_part": {
+            "node": {
+                "value": "ast.ImportFrom",
+                "is_user_defined": false
+            },
+            "alias": {
+                "value": "ast.alias",
+                "is_user_defined": false
+            },
+            "names_to_replace": {
+                "value": "Dict[str, Tuple[str, str]]",
+                "is_user_defined": false
+            }
+        },
+        "BaseImportRewrite._replace_import_from_names": {
+            "node": {
+                "value": "ast.ImportFrom",
+                "is_user_defined": false
+            },
+            "names_to_replace": {
+                "value": "Dict[str, Tuple[str, str]]",
+                "is_user_defined": false
+            }
+        },
+        "BaseImportRewrite.visit_ImportFrom": {
+            "node": {
+                "value": "ast.ImportFrom",
+                "is_user_defined": false
+            }
+        }
+    },
+    "py_backwards.transformers.class_without_bases": {
+        "ClassWithoutBasesTransformer.visit_ClassDef": {
+            "node": {
+                "value": "ast.ClassDef",
+                "is_user_defined": false
+            }
+        }
+    },
+    "py_backwards.transformers.dict_unpacking": {
+        "merge_dicts": {},
+        "merge_dicts._py_backwards_merge_dicts": {},
+        "DictUnpackingTransformer._split_by_None": {
+            "pairs": {
+                "value": "Iterable[Pair]",
+                "is_user_defined": false
+            }
+        },
+        "DictUnpackingTransformer._prepare_splitted": {
+            "splitted": {
+                "value": "Splitted",
+                "is_user_defined": false
+            }
+        },
+        "DictUnpackingTransformer._merge_dicts": {
+            "xs": {
+                "value": "Iterable[Union[ast.Call, ast.Dict]]",
+                "is_user_defined": false
+            }
+        },
+        "DictUnpackingTransformer.visit_Module": {
+            "node": {
+                "value": "ast.Module",
+                "is_user_defined": false
+            }
+        },
+        "DictUnpackingTransformer.visit_Dict": {
+            "node": {
+                "value": "ast.Dict",
+                "is_user_defined": false
+            }
+        }
+    },
+    "py_backwards.transformers.formatted_values": {
+        "FormattedValuesTransformer.visit_FormattedValue": {
+            "node": {
+                "value": "ast.FormattedValue",
+                "is_user_defined": false
+            }
+        },
+        "FormattedValuesTransformer.visit_JoinedStr": {
+            "node": {
+                "value": "ast.JoinedStr",
+                "is_user_defined": false
+            }
+        }
+    },
+    "py_backwards.transformers.functions_annotations": {
+        "FunctionsAnnotationsTransformer.visit_arg": {
+            "node": {
+                "value": "ast.arg",
+                "is_user_defined": false
+            }
+        },
+        "FunctionsAnnotationsTransformer.visit_FunctionDef": {
+            "node": {
+                "value": "ast.FunctionDef",
+                "is_user_defined": false
+            }
+        }
+    },
+    "py_backwards.transformers.import_pathlib": {},
+    "py_backwards.transformers.metaclass": {
+        "six_import": {},
+        "class_bases": {},
+        "MetaclassTransformer.visit_Module": {
+            "node": {
+                "value": "ast.Module",
+                "is_user_defined": false
+            }
+        },
+        "MetaclassTransformer.visit_ClassDef": {
+            "node": {
+                "value": "ast.ClassDef",
+                "is_user_defined": false
+            }
+        }
+    },
+    "py_backwards.transformers.python2_future": {
+        "imports": {},
+        "Python2FutureTransformer.visit_Module": {
+            "node": {
+                "value": "ast.Module",
+                "is_user_defined": false
+            }
+        }
+    },
+    "py_backwards.transformers.return_from_generator": {
+        "return_from_generator": {},
+        "ReturnFromGeneratorTransformer._find_generator_returns": {
+            "node": {
+                "value": "ast.FunctionDef",
+                "is_user_defined": false
+            }
+        },
+        "ReturnFromGeneratorTransformer._replace_return": {
+            "parent": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "return_": {
+                "value": "ast.Return",
+                "is_user_defined": false
+            }
+        },
+        "ReturnFromGeneratorTransformer.visit_FunctionDef": {
+            "node": {
+                "value": "ast.FunctionDef",
+                "is_user_defined": false
+            }
+        }
+    },
+    "py_backwards.transformers.six_moves": {
+        "_get_rewrites": {},
+        "MovedAttribute.__init__": {},
+        "MovedModule.__init__": {}
+    },
+    "py_backwards.transformers.starred_unpacking": {
+        "StarredUnpackingTransformer._has_starred": {
+            "xs": {
+                "value": "List[ast.expr]",
+                "is_user_defined": false
+            }
+        },
+        "StarredUnpackingTransformer._split_by_starred": {
+            "xs": {
+                "value": "Iterable[ast.expr]",
+                "is_user_defined": false
+            }
+        },
+        "StarredUnpackingTransformer._prepare_lists": {
+            "xs": {
+                "value": "List[Splitted]",
+                "is_user_defined": false
+            }
+        },
+        "StarredUnpackingTransformer._merge_lists": {
+            "xs": {
+                "value": "List[ListEntry]",
+                "is_user_defined": false
+            }
+        },
+        "StarredUnpackingTransformer._to_sum_of_lists": {
+            "xs": {
+                "value": "List[ast.expr]",
+                "is_user_defined": false
+            }
+        },
+        "StarredUnpackingTransformer.visit_List": {
+            "node": {
+                "value": "ast.List",
+                "is_user_defined": false
+            }
+        },
+        "StarredUnpackingTransformer.visit_Call": {
+            "node": {
+                "value": "ast.Call",
+                "is_user_defined": false
+            }
+        }
+    },
+    "py_backwards.transformers.string_types": {
+        "StringTypesTransformer.transform": {
+            "tree": {
+                "value": "ast.AST",
+                "is_user_defined": false
+            }
+        }
+    },
+    "py_backwards.transformers.super_without_arguments": {
+        "SuperWithoutArgumentsTransformer._replace_super_args": {
+            "node": {
+                "value": "ast.Call",
+                "is_user_defined": false
+            }
+        },
+        "SuperWithoutArgumentsTransformer.visit_Call": {
+            "node": {
+                "value": "ast.Call",
+                "is_user_defined": false
+            }
+        }
+    },
+    "py_backwards.transformers.variables_annotations": {
+        "VariablesAnnotationsTransformer.transform": {
+            "tree": {
+                "value": "ast.AST",
+                "is_user_defined": false
+            }
+        }
+    },
+    "py_backwards.transformers.yield_from": {
+        "result_assignment": {},
+        "yield_from": {},
+        "YieldFromTransformer._get_yield_from_index": {
+            "node": {
+                "value": "ast.AST",
+                "is_user_defined": false
+            },
+            "type_": {
+                "value": "Type[Holder]",
+                "is_user_defined": false
+            }
+        },
+        "YieldFromTransformer._emulate_yield_from": {
+            "target": {
+                "value": "Optional[ast.AST]",
+                "is_user_defined": false
+            },
+            "node": {
+                "value": "ast.YieldFrom",
+                "is_user_defined": false
+            }
+        },
+        "YieldFromTransformer._handle_assignments": {
+            "node": {
+                "value": "Node",
+                "is_user_defined": false
+            }
+        },
+        "YieldFromTransformer._handle_expressions": {
+            "node": {
+                "value": "Node",
+                "is_user_defined": false
+            }
+        },
+        "YieldFromTransformer.visit": {
+            "node": {
+                "value": "ast.AST",
+                "is_user_defined": false
+            }
+        }
+    },
+    "py_backwards.transformers": {},
+    "py_backwards.utils.helpers": {
+        "eager": {
+            "fn": {
+                "value": "Callable[..., Iterable[T]]",
+                "is_user_defined": false
+            }
+        },
+        "get_source": {
+            "fn": {
+                "value": "Callable[..., Any]",
+                "is_user_defined": false
+            }
+        },
+        "warn": {
+            "message": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "debug": {
+            "get_message": {
+                "value": "Callable[[], str]",
+                "is_user_defined": false
+            }
+        },
+        "eager.wrapped": {
+            "args": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "VariablesGenerator.generate": {
+            "variable": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "py_backwards.utils.snippet": {
+        "find_variables": {
+            "tree": {
+                "value": "ast.AST",
+                "is_user_defined": false
+            }
+        },
+        "extend_tree": {
+            "tree": {
+                "value": "ast.AST",
+                "is_user_defined": false
+            },
+            "variables": {
+                "value": "Dict[str, Variable]",
+                "is_user_defined": false
+            }
+        },
+        "let": {
+            "var": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "extend": {
+            "var": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "VariablesReplacer.__init__": {
+            "variables": {
+                "value": "Dict[str, Variable]",
+                "is_user_defined": false
+            }
+        },
+        "VariablesReplacer._replace_field_or_node": {
+            "node": {
+                "value": "T",
+                "is_user_defined": false
+            },
+            "field": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "VariablesReplacer.visit_Name": {
+            "node": {
+                "value": "ast.Name",
+                "is_user_defined": false
+            }
+        },
+        "VariablesReplacer.visit_FunctionDef": {
+            "node": {
+                "value": "ast.FunctionDef",
+                "is_user_defined": false
+            }
+        },
+        "VariablesReplacer.visit_Attribute": {
+            "node": {
+                "value": "ast.Attribute",
+                "is_user_defined": false
+            }
+        },
+        "VariablesReplacer.visit_keyword": {
+            "node": {
+                "value": "ast.keyword",
+                "is_user_defined": false
+            }
+        },
+        "VariablesReplacer.visit_ClassDef": {
+            "node": {
+                "value": "ast.ClassDef",
+                "is_user_defined": false
+            }
+        },
+        "VariablesReplacer.visit_arg": {
+            "node": {
+                "value": "ast.arg",
+                "is_user_defined": false
+            }
+        },
+        "VariablesReplacer._replace_module": {
+            "module": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "VariablesReplacer.visit_ImportFrom": {
+            "node": {
+                "value": "ast.ImportFrom",
+                "is_user_defined": false
+            }
+        },
+        "VariablesReplacer.visit_alias": {
+            "node": {
+                "value": "ast.alias",
+                "is_user_defined": false
+            }
+        },
+        "VariablesReplacer.visit_ExceptHandler": {
+            "node": {
+                "value": "ast.ExceptHandler",
+                "is_user_defined": false
+            }
+        },
+        "VariablesReplacer.replace": {
+            "tree": {
+                "value": "T",
+                "is_user_defined": false
+            },
+            "variables": {
+                "value": "Dict[str, Variable]",
+                "is_user_defined": false
+            }
+        },
+        "snippet.__init__": {
+            "fn": {
+                "value": "Callable[..., None]",
+                "is_user_defined": false
+            }
+        },
+        "snippet._get_variables": {
+            "tree": {
+                "value": "ast.AST",
+                "is_user_defined": false
+            },
+            "snippet_kwargs": {
+                "value": "Dict[str, Variable]",
+                "is_user_defined": false
+            }
+        },
+        "snippet.get_body": {
+            "snippet_kwargs": {
+                "value": "Variable",
+                "is_user_defined": false
+            }
+        }
+    },
+    "py_backwards.utils.tree": {
+        "_build_parents": {
+            "tree": {
+                "value": "ast.AST",
+                "is_user_defined": false
+            }
+        },
+        "get_parent": {
+            "tree": {
+                "value": "ast.AST",
+                "is_user_defined": false
+            },
+            "node": {
+                "value": "ast.AST",
+                "is_user_defined": false
+            },
+            "rebuild": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "get_non_exp_parent_and_index": {
+            "tree": {
+                "value": "ast.AST",
+                "is_user_defined": false
+            },
+            "node": {
+                "value": "ast.AST",
+                "is_user_defined": false
+            }
+        },
+        "find": {
+            "tree": {
+                "value": "ast.AST",
+                "is_user_defined": false
+            },
+            "type_": {
+                "value": "Type[T]",
+                "is_user_defined": false
+            }
+        },
+        "insert_at": {
+            "index": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "parent": {
+                "value": "ast.AST",
+                "is_user_defined": false
+            },
+            "nodes": {
+                "value": "Union[ast.AST, List[ast.AST]]",
+                "is_user_defined": false
+            }
+        },
+        "replace_at": {
+            "index": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "parent": {
+                "value": "ast.AST",
+                "is_user_defined": false
+            },
+            "nodes": {
+                "value": "Union[ast.AST, List[ast.AST]]",
+                "is_user_defined": false
+            }
+        },
+        "get_closest_parent_of": {
+            "tree": {
+                "value": "ast.AST",
+                "is_user_defined": false
+            },
+            "node": {
+                "value": "ast.AST",
+                "is_user_defined": false
+            },
+            "type_": {
+                "value": "Type[T]",
+                "is_user_defined": false
+            }
+        }
+    },
+    "py_backwards.utils": {}
+}

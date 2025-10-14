@@ -1,0 +1,1390 @@
+{
+    "typesystem.base": {
+        "Position.__init__": {
+            "line_no": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "column_no": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "char_index": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Position.__eq__": {
+            "other": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Position.__repr__": {},
+        "Message.__init__": {
+            "text": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "code": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "key": {
+                "value": "Union[int, str]",
+                "is_user_defined": false
+            },
+            "index": {
+                "value": "List[Union[int, str]]",
+                "is_user_defined": false
+            },
+            "position": {
+                "value": "Position",
+                "is_user_defined": true
+            },
+            "start_position": {
+                "value": "Position",
+                "is_user_defined": true
+            },
+            "end_position": {
+                "value": "Position",
+                "is_user_defined": true
+            }
+        },
+        "Message.__eq__": {
+            "other": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Message.__hash__": {},
+        "Message.__repr__": {},
+        "BaseError.__init__": {
+            "text": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "code": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "key": {
+                "value": "Union[int, str]",
+                "is_user_defined": false
+            },
+            "position": {
+                "value": "Position",
+                "is_user_defined": true
+            },
+            "messages": {
+                "value": "List[Message]",
+                "is_user_defined": true
+            }
+        },
+        "BaseError.messages": {
+            "add_prefix": {
+                "value": "Union[str, int]",
+                "is_user_defined": true
+            }
+        },
+        "BaseError.__iter__": {},
+        "BaseError.__len__": {},
+        "BaseError.__getitem__": {
+            "key": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "BaseError.__eq__": {
+            "other": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "BaseError.__hash__": {},
+        "BaseError.__repr__": {},
+        "BaseError.__str__": {},
+        "ValidationResult.__init__": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "error": {
+                "value": "ValidationError",
+                "is_user_defined": true
+            }
+        },
+        "ValidationResult.__iter__": {},
+        "ValidationResult.__bool__": {},
+        "ValidationResult.__repr__": {}
+    },
+    "typesystem.composites": {
+        "NeverMatch.__init__": {
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "NeverMatch.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "OneOf.__init__": {
+            "one_of": {
+                "value": "List[Field]",
+                "is_user_defined": true
+            },
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "OneOf.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "AllOf.__init__": {
+            "all_of": {
+                "value": "List[Field]",
+                "is_user_defined": true
+            },
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "AllOf.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Not.__init__": {
+            "negated": {
+                "value": "Field",
+                "is_user_defined": true
+            },
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Not.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "IfThenElse.__init__": {
+            "if_clause": {
+                "value": "Field",
+                "is_user_defined": true
+            },
+            "then_clause": {
+                "value": "Field",
+                "is_user_defined": true
+            },
+            "else_clause": {
+                "value": "Field",
+                "is_user_defined": true
+            },
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "IfThenElse.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        }
+    },
+    "typesystem.fields": {
+        "Field.__init__": {
+            "title": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "description": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "default": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "allow_null": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Field.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Field.validate_or_error": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Field.serialize": {
+            "obj": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Field.has_default": {},
+        "Field.get_default_value": {},
+        "Field.validation_error": {
+            "code": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Field.get_error_text": {
+            "code": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Field.__or__": {
+            "other": {
+                "value": "'Field'",
+                "is_user_defined": false
+            }
+        },
+        "String.__init__": {
+            "allow_blank": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "trim_whitespace": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "max_length": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "min_length": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "pattern": {
+                "value": "Union[str, Pattern]",
+                "is_user_defined": true
+            },
+            "format": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "String.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "String.serialize": {
+            "obj": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Number.__init__": {
+            "minimum": {
+                "value": "Union[int, float, decimal.Decimal]",
+                "is_user_defined": true
+            },
+            "maximum": {
+                "value": "Union[int, float, decimal.Decimal]",
+                "is_user_defined": true
+            },
+            "exclusive_minimum": {
+                "value": "Union[int, float, decimal.Decimal]",
+                "is_user_defined": true
+            },
+            "exclusive_maximum": {
+                "value": "Union[int, float, decimal.Decimal]",
+                "is_user_defined": true
+            },
+            "precision": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "multiple_of": {
+                "value": "Union[int, float, decimal.Decimal]",
+                "is_user_defined": true
+            },
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Number.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Decimal.serialize": {
+            "obj": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Boolean.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Choice.__init__": {
+            "choices": {
+                "value": "Sequence[Union[str, Tuple[str, str]]]",
+                "is_user_defined": true
+            },
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Choice.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Object.__init__": {
+            "properties": {
+                "value": "Dict[str, Field]",
+                "is_user_defined": true
+            },
+            "pattern_properties": {
+                "value": "Dict[str, Field]",
+                "is_user_defined": true
+            },
+            "additional_properties": {
+                "value": "Union[bool, None, Field]",
+                "is_user_defined": true
+            },
+            "property_names": {
+                "value": "Field",
+                "is_user_defined": true
+            },
+            "min_properties": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "max_properties": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "required": {
+                "value": "Sequence[str]",
+                "is_user_defined": false
+            },
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Object.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Array.__init__": {
+            "items": {
+                "value": "Union[Field, Sequence[Field]]",
+                "is_user_defined": true
+            },
+            "additional_items": {
+                "value": "Union[Field, bool]",
+                "is_user_defined": true
+            },
+            "min_items": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "max_items": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "exact_items": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "unique_items": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Array.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Array.serialize": {
+            "obj": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Text.__init__": {
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Date.__init__": {
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Time.__init__": {
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "DateTime.__init__": {
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Union.__init__": {
+            "any_of": {
+                "value": "List[Field]",
+                "is_user_defined": true
+            },
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Union.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Any.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Const.__init__": {
+            "const": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Const.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        }
+    },
+    "typesystem.formats": {
+        "BaseFormat.validation_error": {
+            "code": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "BaseFormat.is_native_type": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "BaseFormat.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "BaseFormat.serialize": {
+            "obj": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "DateFormat.is_native_type": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "DateFormat.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "DateFormat.serialize": {
+            "obj": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "TimeFormat.is_native_type": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "TimeFormat.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "TimeFormat.serialize": {
+            "obj": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "DateTimeFormat.is_native_type": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "DateTimeFormat.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "DateTimeFormat.serialize": {
+            "obj": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "UUIDFormat.is_native_type": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "UUIDFormat.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "UUIDFormat.serialize": {
+            "obj": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        }
+    },
+    "typesystem.forms": {
+        "Form.__init__": {
+            "env": {
+                "value": "'jinja2.Environment'",
+                "is_user_defined": false
+            },
+            "schema": {
+                "value": "Type[Schema]",
+                "is_user_defined": true
+            },
+            "values": {
+                "value": "dict",
+                "is_user_defined": false
+            },
+            "errors": {
+                "value": "ValidationError",
+                "is_user_defined": true
+            }
+        },
+        "Form.render_fields": {},
+        "Form.render_field": {
+            "field_name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "field": {
+                "value": "Field",
+                "is_user_defined": true
+            },
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "error": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Form.template_for_field": {
+            "field": {
+                "value": "Field",
+                "is_user_defined": true
+            }
+        },
+        "Form.input_type_for_field": {
+            "field": {
+                "value": "Field",
+                "is_user_defined": true
+            }
+        },
+        "Form.__str__": {},
+        "Form.__html__": {},
+        "Jinja2Forms.__init__": {
+            "directory": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "package": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Jinja2Forms.load_template_env": {
+            "directory": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "package": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Jinja2Forms.Form": {
+            "schema": {
+                "value": "Type[Schema]",
+                "is_user_defined": true
+            },
+            "values": {
+                "value": "dict",
+                "is_user_defined": false
+            },
+            "errors": {
+                "value": "ValidationError",
+                "is_user_defined": true
+            }
+        }
+    },
+    "typesystem.json_schema": {
+        "from_json_schema": {
+            "data": {
+                "value": "Union[bool, dict]",
+                "is_user_defined": true
+            },
+            "definitions": {
+                "value": "SchemaDefinitions",
+                "is_user_defined": true
+            }
+        },
+        "type_from_json_schema": {
+            "data": {
+                "value": "dict",
+                "is_user_defined": false
+            },
+            "definitions": {
+                "value": "SchemaDefinitions",
+                "is_user_defined": true
+            }
+        },
+        "get_valid_types": {
+            "data": {
+                "value": "dict",
+                "is_user_defined": false
+            }
+        },
+        "from_json_schema_type": {
+            "data": {
+                "value": "dict",
+                "is_user_defined": false
+            },
+            "type_string": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "allow_null": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "definitions": {
+                "value": "SchemaDefinitions",
+                "is_user_defined": true
+            }
+        },
+        "ref_from_json_schema": {
+            "data": {
+                "value": "dict",
+                "is_user_defined": false
+            },
+            "definitions": {
+                "value": "SchemaDefinitions",
+                "is_user_defined": true
+            }
+        },
+        "enum_from_json_schema": {
+            "data": {
+                "value": "dict",
+                "is_user_defined": false
+            },
+            "definitions": {
+                "value": "SchemaDefinitions",
+                "is_user_defined": true
+            }
+        },
+        "const_from_json_schema": {
+            "data": {
+                "value": "dict",
+                "is_user_defined": false
+            },
+            "definitions": {
+                "value": "SchemaDefinitions",
+                "is_user_defined": true
+            }
+        },
+        "all_of_from_json_schema": {
+            "data": {
+                "value": "dict",
+                "is_user_defined": false
+            },
+            "definitions": {
+                "value": "SchemaDefinitions",
+                "is_user_defined": true
+            }
+        },
+        "any_of_from_json_schema": {
+            "data": {
+                "value": "dict",
+                "is_user_defined": false
+            },
+            "definitions": {
+                "value": "SchemaDefinitions",
+                "is_user_defined": true
+            }
+        },
+        "one_of_from_json_schema": {
+            "data": {
+                "value": "dict",
+                "is_user_defined": false
+            },
+            "definitions": {
+                "value": "SchemaDefinitions",
+                "is_user_defined": true
+            }
+        },
+        "not_from_json_schema": {
+            "data": {
+                "value": "dict",
+                "is_user_defined": false
+            },
+            "definitions": {
+                "value": "SchemaDefinitions",
+                "is_user_defined": true
+            }
+        },
+        "if_then_else_from_json_schema": {
+            "data": {
+                "value": "dict",
+                "is_user_defined": false
+            },
+            "definitions": {
+                "value": "SchemaDefinitions",
+                "is_user_defined": true
+            }
+        },
+        "to_json_schema": {
+            "arg": {
+                "value": "Union[Field, Type[Schema]]",
+                "is_user_defined": true
+            },
+            "_definitions": {
+                "value": "dict",
+                "is_user_defined": false
+            }
+        },
+        "get_standard_properties": {
+            "field": {
+                "value": "Field",
+                "is_user_defined": true
+            }
+        }
+    },
+    "typesystem.schemas": {
+        "set_definitions": {
+            "field": {
+                "value": "Field",
+                "is_user_defined": true
+            },
+            "definitions": {
+                "value": "SchemaDefinitions",
+                "is_user_defined": true
+            }
+        },
+        "SchemaDefinitions.__init__": {
+            "args": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "SchemaDefinitions.__getitem__": {
+            "key": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "SchemaDefinitions.__iter__": {},
+        "SchemaDefinitions.__len__": {},
+        "SchemaDefinitions.__setitem__": {
+            "key": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "SchemaDefinitions.__delitem__": {
+            "key": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "SchemaMetaclass.__new__": {
+            "cls": {
+                "value": "type",
+                "is_user_defined": false
+            },
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "bases": {
+                "value": "Sequence[type]",
+                "is_user_defined": false
+            },
+            "attrs": {
+                "value": "dict",
+                "is_user_defined": false
+            },
+            "definitions": {
+                "value": "SchemaDefinitions",
+                "is_user_defined": true
+            }
+        },
+        "Schema.__init__": {
+            "args": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Schema.make_validator": {
+            "cls": {
+                "value": "Type['Schema']",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Schema.validate": {
+            "cls": {
+                "value": "Type['Schema']",
+                "is_user_defined": false
+            },
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Schema.validate_or_error": {
+            "cls": {
+                "value": "Type['Schema']",
+                "is_user_defined": false
+            },
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Schema.is_sparse": {},
+        "Schema.__eq__": {
+            "other": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Schema.__getitem__": {
+            "key": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Schema.__iter__": {},
+        "Schema.__len__": {},
+        "Schema.__repr__": {},
+        "Reference.__init__": {
+            "to": {
+                "value": "Union[str, Type[Schema]]",
+                "is_user_defined": true
+            },
+            "definitions": {
+                "value": "Mapping",
+                "is_user_defined": false
+            },
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Reference.target_string": {},
+        "Reference.target": {},
+        "Reference.validate": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Reference.serialize": {
+            "obj": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        }
+    },
+    "typesystem.unique": {
+        "Uniqueness.__init__": {
+            "items": {
+                "value": "list",
+                "is_user_defined": false
+            }
+        },
+        "Uniqueness.__contains__": {
+            "item": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Uniqueness.add": {
+            "item": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Uniqueness.make_hashable": {
+            "element": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        }
+    },
+    "typesystem": {},
+    "typesystem.tokenize.positional_validation": {
+        "validate_with_positions": {
+            "token": {
+                "value": "Token",
+                "is_user_defined": true
+            },
+            "validator": {
+                "value": "Union[Field, Type[Schema]]",
+                "is_user_defined": true
+            }
+        }
+    },
+    "typesystem.tokenize.tokenize_json": {
+        "_TokenizingJSONObject": {
+            "s_and_end": {
+                "value": "Tuple[str, int]",
+                "is_user_defined": false
+            },
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "scan_once": {
+                "value": "Callable[[str, int], Tuple[Token, int]]",
+                "is_user_defined": true
+            },
+            "memo": {
+                "value": "dict",
+                "is_user_defined": false
+            },
+            "content": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "_w": {
+                "value": "Callable",
+                "is_user_defined": false
+            },
+            "_ws": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_make_scanner": {
+            "context": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "content": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "tokenize_json": {
+            "content": {
+                "value": "Union[str, bytes]",
+                "is_user_defined": true
+            }
+        },
+        "validate_json": {
+            "content": {
+                "value": "Union[str, bytes]",
+                "is_user_defined": true
+            },
+            "validator": {
+                "value": "Union[Field, Type[Schema]]",
+                "is_user_defined": true
+            }
+        },
+        "_make_scanner._scan_once": {
+            "string": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "idx": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "_make_scanner.scan_once": {
+            "string": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "idx": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "_TokenizingDecoder.__init__": {
+            "args": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        }
+    },
+    "typesystem.tokenize.tokenize_yaml": {
+        "_get_position": {
+            "content": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "index": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "tokenize_yaml": {
+            "content": {
+                "value": "Union[str, bytes]",
+                "is_user_defined": true
+            }
+        },
+        "validate_yaml": {
+            "content": {
+                "value": "Union[str, bytes]",
+                "is_user_defined": true
+            },
+            "validator": {
+                "value": "Union[Field, Type[Schema]]",
+                "is_user_defined": true
+            }
+        },
+        "tokenize_yaml.construct_mapping": {
+            "loader": {
+                "value": "'yaml.Loader'",
+                "is_user_defined": false
+            },
+            "node": {
+                "value": "'yaml.Node'",
+                "is_user_defined": false
+            }
+        },
+        "tokenize_yaml.construct_sequence": {
+            "loader": {
+                "value": "'yaml.Loader'",
+                "is_user_defined": false
+            },
+            "node": {
+                "value": "'yaml.Node'",
+                "is_user_defined": false
+            }
+        },
+        "tokenize_yaml.construct_scalar": {
+            "loader": {
+                "value": "'yaml.Loader'",
+                "is_user_defined": false
+            },
+            "node": {
+                "value": "'yaml.Node'",
+                "is_user_defined": false
+            }
+        },
+        "tokenize_yaml.construct_int": {
+            "loader": {
+                "value": "'yaml.Loader'",
+                "is_user_defined": false
+            },
+            "node": {
+                "value": "'yaml.Node'",
+                "is_user_defined": false
+            }
+        },
+        "tokenize_yaml.construct_float": {
+            "loader": {
+                "value": "'yaml.Loader'",
+                "is_user_defined": false
+            },
+            "node": {
+                "value": "'yaml.Node'",
+                "is_user_defined": false
+            }
+        },
+        "tokenize_yaml.construct_bool": {
+            "loader": {
+                "value": "'yaml.Loader'",
+                "is_user_defined": false
+            },
+            "node": {
+                "value": "'yaml.Node'",
+                "is_user_defined": false
+            }
+        },
+        "tokenize_yaml.construct_null": {
+            "loader": {
+                "value": "'yaml.Loader'",
+                "is_user_defined": false
+            },
+            "node": {
+                "value": "'yaml.Node'",
+                "is_user_defined": false
+            }
+        }
+    },
+    "typesystem.tokenize.tokens": {
+        "Token.__init__": {
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "start_index": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "end_index": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "content": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Token._get_value": {},
+        "Token._get_child_token": {
+            "key": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Token._get_key_token": {
+            "key": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Token.string": {},
+        "Token.value": {},
+        "Token.start": {},
+        "Token.end": {},
+        "Token.lookup": {
+            "index": {
+                "value": "list",
+                "is_user_defined": false
+            }
+        },
+        "Token.lookup_key": {
+            "index": {
+                "value": "list",
+                "is_user_defined": false
+            }
+        },
+        "Token._get_position": {
+            "index": {
+                "value": "int",
+                "is_user_defined": false
+            }
+        },
+        "Token.__repr__": {},
+        "Token.__eq__": {
+            "other": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "ScalarToken.__hash__": {},
+        "ScalarToken._get_value": {},
+        "DictToken.__init__": {
+            "args": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "DictToken._get_value": {},
+        "DictToken._get_child_token": {
+            "key": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "DictToken._get_key_token": {
+            "key": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "ListToken._get_value": {},
+        "ListToken._get_child_token": {
+            "key": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        }
+    },
+    "typesystem.tokenize": {}
+}

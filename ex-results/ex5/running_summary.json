@@ -1,0 +1,63 @@
+{
+    "total_time": 126376.24557900429,
+    "coverup": 50311.370262145996,
+    "times": {
+        "collect_message": 0.276,
+        "time_1": 0.404,
+        "time_2": 0.175,
+        "time_3": 0.145
+    },
+    "runs": {
+        "run_1": 0.652,
+        "run_2": 0.712,
+        "run_3": 0.741
+    },
+    "syntax_pass": 3258,
+    "syntax_error": 2037,
+    "syntax_fix_success": 828,
+    "assertion_pass": 852,
+    "assertion_error": 3234,
+    "assertion_fix_success": 1813,
+    "assertion_error_types": [
+        [
+            "AssertionError",
+            5717
+        ],
+        [
+            "AttributeError",
+            3888
+        ],
+        [
+            "TypeError",
+            2491
+        ],
+        [
+            "KeyError",
+            627
+        ],
+        [
+            "UnboundLocalError",
+            600
+        ],
+        [
+            "ValueError",
+            587
+        ],
+        [
+            "FileNotFoundError",
+            427
+        ],
+        [
+            "NameError",
+            256
+        ],
+        [
+            "TypingError",
+            247
+        ],
+        [
+            "ModuleNotFoundError",
+            183
+        ]
+    ]
+}

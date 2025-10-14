@@ -1,0 +1,297 @@
+{
+    "docstring_parser.common": {
+        "DocstringMeta.__init__": {
+            "args": {
+                "value": "List[str]",
+                "is_user_defined": false
+            },
+            "description": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "DocstringParam.__init__": {
+            "args": {
+                "value": "List[str]",
+                "is_user_defined": false
+            },
+            "description": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            },
+            "arg_name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "type_name": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            },
+            "is_optional": {
+                "value": "Optional[bool]",
+                "is_user_defined": false
+            },
+            "default": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            }
+        },
+        "DocstringReturns.__init__": {
+            "args": {
+                "value": "List[str]",
+                "is_user_defined": false
+            },
+            "description": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            },
+            "type_name": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            },
+            "is_generator": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "return_name": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            }
+        },
+        "DocstringRaises.__init__": {
+            "args": {
+                "value": "List[str]",
+                "is_user_defined": false
+            },
+            "description": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            },
+            "type_name": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            }
+        },
+        "DocstringDeprecated.__init__": {
+            "args": {
+                "value": "List[str]",
+                "is_user_defined": false
+            },
+            "description": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            },
+            "version": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            }
+        },
+        "Docstring.__init__": {},
+        "Docstring.params": {},
+        "Docstring.raises": {},
+        "Docstring.returns": {},
+        "Docstring.deprecation": {}
+    },
+    "docstring_parser.google": {
+        "parse": {
+            "text": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "GoogleParser.__init__": {
+            "sections": {
+                "value": "Optional[List[Section]]",
+                "is_user_defined": true
+            }
+        },
+        "GoogleParser._setup": {},
+        "GoogleParser._build_meta": {
+            "text": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "title": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "GoogleParser._build_single_meta": {
+            "section": {
+                "value": "Section",
+                "is_user_defined": true
+            },
+            "desc": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "GoogleParser._build_multi_meta": {
+            "section": {
+                "value": "Section",
+                "is_user_defined": true
+            },
+            "before": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "desc": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "GoogleParser.add_section": {
+            "section": {
+                "value": "Section",
+                "is_user_defined": true
+            }
+        },
+        "GoogleParser.parse": {
+            "text": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "docstring_parser.numpydoc": {
+        "_pairwise": {
+            "iterable": {
+                "value": "Iterable",
+                "is_user_defined": false
+            }
+        },
+        "_clean_str": {
+            "string": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "parse": {
+            "text": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Section.__init__": {
+            "title": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "key": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Section.title_pattern": {},
+        "Section.parse": {
+            "text": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_KVSection._parse_item": {
+            "key": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "value": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_KVSection.parse": {
+            "text": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_SphinxSection.title_pattern": {},
+        "ParamSection._parse_item": {
+            "key": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "value": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "RaisesSection._parse_item": {
+            "key": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "value": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "ReturnsSection._parse_item": {
+            "key": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "value": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "DeprecationSection.parse": {
+            "text": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "NumpydocParser.__init__": {
+            "sections": {
+                "value": "Optional[Dict[str, Section]]",
+                "is_user_defined": true
+            }
+        },
+        "NumpydocParser._setup": {},
+        "NumpydocParser.add_section": {
+            "section": {
+                "value": "Section",
+                "is_user_defined": true
+            }
+        },
+        "NumpydocParser.parse": {
+            "text": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "docstring_parser.parser": {
+        "parse": {
+            "text": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "style": {
+                "value": "Style",
+                "is_user_defined": true
+            }
+        }
+    },
+    "docstring_parser.rest": {
+        "_build_meta": {
+            "args": {
+                "value": "List[str]",
+                "is_user_defined": false
+            },
+            "desc": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "parse": {
+            "text": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "docstring_parser.styles": {},
+    "docstring_parser": {}
+}

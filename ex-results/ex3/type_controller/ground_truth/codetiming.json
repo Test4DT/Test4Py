@@ -1,0 +1,99 @@
+{
+    "codetiming._timer": {
+        "Timer.start": {},
+        "Timer.stop": {},
+        "Timer.__enter__": {},
+        "Timer.__exit__": {
+            "exc_info": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        }
+    },
+    "codetiming._timers": {
+        "Timers.__init__": {
+            "args": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "Timers.add": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "value": {
+                "value": "float",
+                "is_user_defined": false
+            }
+        },
+        "Timers.clear": {},
+        "Timers.__setitem__": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "value": {
+                "value": "float",
+                "is_user_defined": false
+            }
+        },
+        "Timers.apply": {
+            "func": {
+                "value": "Callable[[List[float]], float]",
+                "is_user_defined": false
+            },
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Timers.count": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Timers.total": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Timers.min": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Timers.max": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Timers.mean": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Timers.median": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Timers.stdev": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "codetiming": {}
+}

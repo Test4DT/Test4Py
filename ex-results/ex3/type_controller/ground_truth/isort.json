@@ -1,0 +1,1734 @@
+{
+    "isort.api": {
+        "sort_code_string": {
+            "code": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "extension": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "file_path": {
+                "value": "Optional[Path]",
+                "is_user_defined": false
+            },
+            "disregard_skip": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "show_diff": {
+                "value": "Union[bool, TextIO]",
+                "is_user_defined": false
+            }
+        },
+        "check_code_string": {
+            "code": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "show_diff": {
+                "value": "Union[bool, TextIO]",
+                "is_user_defined": false
+            },
+            "extension": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "file_path": {
+                "value": "Optional[Path]",
+                "is_user_defined": false
+            },
+            "disregard_skip": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "sort_stream": {
+            "input_stream": {
+                "value": "TextIO",
+                "is_user_defined": false
+            },
+            "output_stream": {
+                "value": "TextIO",
+                "is_user_defined": false
+            },
+            "extension": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "file_path": {
+                "value": "Optional[Path]",
+                "is_user_defined": false
+            },
+            "disregard_skip": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "show_diff": {
+                "value": "Union[bool, TextIO]",
+                "is_user_defined": false
+            }
+        },
+        "check_stream": {
+            "input_stream": {
+                "value": "TextIO",
+                "is_user_defined": false
+            },
+            "show_diff": {
+                "value": "Union[bool, TextIO]",
+                "is_user_defined": false
+            },
+            "extension": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "file_path": {
+                "value": "Optional[Path]",
+                "is_user_defined": false
+            },
+            "disregard_skip": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "check_file": {
+            "filename": {
+                "value": "Union[str, Path]",
+                "is_user_defined": false
+            },
+            "show_diff": {
+                "value": "Union[bool, TextIO]",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "file_path": {
+                "value": "Optional[Path]",
+                "is_user_defined": false
+            },
+            "disregard_skip": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "extension": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            }
+        },
+        "sort_file": {
+            "filename": {
+                "value": "Union[str, Path]",
+                "is_user_defined": false
+            },
+            "extension": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "file_path": {
+                "value": "Optional[Path]",
+                "is_user_defined": false
+            },
+            "disregard_skip": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "ask_to_apply": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "show_diff": {
+                "value": "Union[bool, TextIO]",
+                "is_user_defined": false
+            },
+            "write_to_stdout": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "output": {
+                "value": "Optional[TextIO]",
+                "is_user_defined": false
+            }
+        },
+        "find_imports_in_code": {
+            "code": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "file_path": {
+                "value": "Optional[Path]",
+                "is_user_defined": false
+            },
+            "unique": {
+                "value": "Union[bool, ImportKey]",
+                "is_user_defined": true
+            },
+            "top_only": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "find_imports_in_stream": {
+            "input_stream": {
+                "value": "TextIO",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "file_path": {
+                "value": "Optional[Path]",
+                "is_user_defined": false
+            },
+            "unique": {
+                "value": "Union[bool, ImportKey]",
+                "is_user_defined": true
+            },
+            "top_only": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "_seen": {
+                "value": "Optional[Set[str]]",
+                "is_user_defined": false
+            }
+        },
+        "find_imports_in_file": {
+            "filename": {
+                "value": "Union[str, Path]",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "file_path": {
+                "value": "Optional[Path]",
+                "is_user_defined": false
+            },
+            "unique": {
+                "value": "Union[bool, ImportKey]",
+                "is_user_defined": true
+            },
+            "top_only": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "find_imports_in_paths": {
+            "paths": {
+                "value": "Iterator[Union[str, Path]]",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "file_path": {
+                "value": "Optional[Path]",
+                "is_user_defined": false
+            },
+            "unique": {
+                "value": "Union[bool, ImportKey]",
+                "is_user_defined": true
+            },
+            "top_only": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "_config": {
+            "path": {
+                "value": "Optional[Path]",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            }
+        }
+    },
+    "isort.comments": {
+        "parse": {
+            "line": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "add_to_line": {
+            "comments": {
+                "value": "Optional[List[str]]",
+                "is_user_defined": false
+            },
+            "original_string": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "removed": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "comment_prefix": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "isort.core": {
+        "process": {
+            "input_stream": {
+                "value": "TextIO",
+                "is_user_defined": false
+            },
+            "output_stream": {
+                "value": "TextIO",
+                "is_user_defined": false
+            },
+            "extension": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            }
+        },
+        "_indented_config": {
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "indent": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_has_changed": {
+            "before": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "after": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "line_separator": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "ignore_whitespace": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        }
+    },
+    "isort.exceptions": {
+        "InvalidSettingsPath.__init__": {
+            "settings_path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "ExistingSyntaxErrors.__init__": {
+            "file_path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "IntroducedSyntaxErrors.__init__": {
+            "file_path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "FileSkipped.__init__": {
+            "message": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "file_path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "FileSkipComment.__init__": {
+            "file_path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "FileSkipSetting.__init__": {
+            "file_path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "ProfileDoesNotExist.__init__": {
+            "profile": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "FormattingPluginDoesNotExist.__init__": {
+            "formatter": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "LiteralParsingFailure.__init__": {
+            "code": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "original_error": {
+                "value": "Exception",
+                "is_user_defined": false
+            }
+        },
+        "LiteralSortTypeMismatch.__init__": {
+            "kind": {
+                "value": "type",
+                "is_user_defined": false
+            },
+            "expected_kind": {
+                "value": "type",
+                "is_user_defined": false
+            }
+        },
+        "AssignmentsFormatMismatch.__init__": {
+            "code": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "UnsupportedSettings._format_option": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "value": {
+                "value": "Any",
+                "is_user_defined": false
+            },
+            "source": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "UnsupportedSettings.__init__": {
+            "unsupported_settings": {
+                "value": "Dict[str, Dict[str, str]]",
+                "is_user_defined": false
+            }
+        },
+        "UnsupportedEncoding.__init__": {
+            "filename": {
+                "value": "Union[str, Path]",
+                "is_user_defined": false
+            }
+        },
+        "MissingSection.__init__": {
+            "import_module": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "section": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "isort.files": {
+        "find": {
+            "paths": {
+                "value": "Iterable[str]",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "skipped": {
+                "value": "List[str]",
+                "is_user_defined": false
+            },
+            "broken": {
+                "value": "List[str]",
+                "is_user_defined": false
+            }
+        }
+    },
+    "isort.format": {
+        "format_simplified": {
+            "import_line": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "format_natural": {
+            "import_line": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "show_unified_diff": {
+            "file_input": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "file_output": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "file_path": {
+                "value": "Optional[Path]",
+                "is_user_defined": false
+            },
+            "output": {
+                "value": "Optional[TextIO]",
+                "is_user_defined": false
+            },
+            "color_output": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "ask_whether_to_apply_changes_to_file": {
+            "file_path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "remove_whitespace": {
+            "content": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "line_separator": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "create_terminal_printer": {
+            "color": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "output": {
+                "value": "Optional[TextIO]",
+                "is_user_defined": false
+            }
+        },
+        "BasicPrinter.__init__": {
+            "output": {
+                "value": "Optional[TextIO]",
+                "is_user_defined": false
+            }
+        },
+        "BasicPrinter.success": {
+            "message": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "BasicPrinter.error": {
+            "message": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "BasicPrinter.diff_line": {
+            "line": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "ColoramaPrinter.__init__": {
+            "output": {
+                "value": "Optional[TextIO]",
+                "is_user_defined": false
+            }
+        },
+        "ColoramaPrinter.style_text": {
+            "text": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "style": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            }
+        },
+        "ColoramaPrinter.diff_line": {
+            "line": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "isort.hooks": {
+        "get_output": {
+            "command": {
+                "value": "List[str]",
+                "is_user_defined": false
+            }
+        },
+        "get_lines": {
+            "command": {
+                "value": "List[str]",
+                "is_user_defined": false
+            }
+        },
+        "git_hook": {
+            "strict": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "modify": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "lazy": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "settings_file": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "isort.identify": {
+        "imports": {
+            "input_stream": {
+                "value": "TextIO",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "file_path": {
+                "value": "Optional[Path]",
+                "is_user_defined": false
+            },
+            "top_only": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "Import.statement": {},
+        "Import.__str__": {}
+    },
+    "isort.io": {
+        "File.detect_encoding": {
+            "filename": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "readline": {
+                "value": "Callable[[], bytes]",
+                "is_user_defined": false
+            }
+        },
+        "File.from_contents": {
+            "contents": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "filename": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "File.extension": {},
+        "File._open": {},
+        "File.read": {
+            "filename": {
+                "value": "Union[str, Path]",
+                "is_user_defined": false
+            }
+        },
+        "_EmptyIO.write": {}
+    },
+    "isort.literal": {
+        "assignments": {
+            "code": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "assignment": {
+            "code": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "sort_type": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "extension": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            }
+        },
+        "register_type": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "kind": {
+                "value": "type",
+                "is_user_defined": false
+            }
+        },
+        "_dict": {
+            "value": {
+                "value": "Dict[Any, Any]",
+                "is_user_defined": false
+            },
+            "printer": {
+                "value": "ISortPrettyPrinter",
+                "is_user_defined": true
+            }
+        },
+        "_list": {
+            "value": {
+                "value": "List[Any]",
+                "is_user_defined": false
+            },
+            "printer": {
+                "value": "ISortPrettyPrinter",
+                "is_user_defined": true
+            }
+        },
+        "_unique_list": {
+            "value": {
+                "value": "List[Any]",
+                "is_user_defined": false
+            },
+            "printer": {
+                "value": "ISortPrettyPrinter",
+                "is_user_defined": true
+            }
+        },
+        "_set": {
+            "value": {
+                "value": "Set[Any]",
+                "is_user_defined": false
+            },
+            "printer": {
+                "value": "ISortPrettyPrinter",
+                "is_user_defined": true
+            }
+        },
+        "_tuple": {
+            "value": {
+                "value": "Tuple[Any, ...]",
+                "is_user_defined": false
+            },
+            "printer": {
+                "value": "ISortPrettyPrinter",
+                "is_user_defined": true
+            }
+        },
+        "_unique_tuple": {
+            "value": {
+                "value": "Tuple[Any, ...]",
+                "is_user_defined": false
+            },
+            "printer": {
+                "value": "ISortPrettyPrinter",
+                "is_user_defined": true
+            }
+        },
+        "ISortPrettyPrinter.__init__": {
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            }
+        },
+        "register_type.wrap": {}
+    },
+    "isort.logo": {},
+    "isort.main": {
+        "sort_imports": {
+            "file_name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "check": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "ask_to_apply": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "write_to_stdout": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "kwargs": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        },
+        "_print_hard_fail": {
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "offending_file": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            },
+            "message": {
+                "value": "Optional[str]",
+                "is_user_defined": false
+            }
+        },
+        "_build_arg_parser": {},
+        "parse_args": {
+            "argv": {
+                "value": "Optional[Sequence[str]]",
+                "is_user_defined": false
+            }
+        },
+        "_preconvert": {},
+        "identify_imports_main": {
+            "argv": {
+                "value": "Optional[Sequence[str]]",
+                "is_user_defined": false
+            },
+            "stdin": {
+                "value": "Optional[TextIOWrapper]",
+                "is_user_defined": false
+            }
+        },
+        "main": {
+            "argv": {
+                "value": "Optional[Sequence[str]]",
+                "is_user_defined": false
+            },
+            "stdin": {
+                "value": "Optional[TextIOWrapper]",
+                "is_user_defined": false
+            }
+        },
+        "SortAttempt.__init__": {
+            "incorrectly_sorted": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "skipped": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "supported_encoding": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        }
+    },
+    "isort.output": {
+        "sorted_imports": {
+            "parsed": {
+                "value": "parse.ParsedContent",
+                "is_user_defined": true
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "extension": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "import_type": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_with_from_imports": {
+            "parsed": {
+                "value": "parse.ParsedContent",
+                "is_user_defined": true
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "from_modules": {
+                "value": "Iterable[str]",
+                "is_user_defined": false
+            },
+            "section": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "remove_imports": {
+                "value": "List[str]",
+                "is_user_defined": false
+            },
+            "import_type": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_with_straight_imports": {
+            "parsed": {
+                "value": "parse.ParsedContent",
+                "is_user_defined": true
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "straight_modules": {
+                "value": "Iterable[str]",
+                "is_user_defined": false
+            },
+            "section": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "remove_imports": {
+                "value": "List[str]",
+                "is_user_defined": false
+            },
+            "import_type": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_output_as_string": {
+            "lines": {
+                "value": "List[str]",
+                "is_user_defined": false
+            },
+            "line_separator": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_normalize_empty_lines": {
+            "lines": {
+                "value": "List[str]",
+                "is_user_defined": false
+            }
+        },
+        "_ensure_newline_before_comment": {},
+        "_with_star_comments": {
+            "parsed": {
+                "value": "parse.ParsedContent",
+                "is_user_defined": true
+            },
+            "module": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "comments": {
+                "value": "List[str]",
+                "is_user_defined": false
+            }
+        },
+        "_LineWithComments.__new__": {},
+        "_ensure_newline_before_comment.is_comment": {}
+    },
+    "isort.parse": {
+        "_infer_line_separator": {
+            "contents": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_normalize_line": {
+            "raw_line": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "import_type": {
+            "line": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            }
+        },
+        "_strip_syntax": {
+            "import_string": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "skip_line": {
+            "line": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "in_quote": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "index": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "section_comments": {
+                "value": "Tuple[str, ...]",
+                "is_user_defined": false
+            },
+            "needs_import": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "file_contents": {
+            "contents": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            }
+        }
+    },
+    "isort.place": {
+        "module": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            }
+        },
+        "module_with_reason": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            }
+        },
+        "_forced_separate": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            }
+        },
+        "_local": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            }
+        },
+        "_known_pattern": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            }
+        },
+        "_src_path": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "src_paths": {
+                "value": "Optional[Iterable[Path]]",
+                "is_user_defined": false
+            },
+            "prefix": {
+                "value": "Tuple[str, ...]",
+                "is_user_defined": false
+            }
+        },
+        "_is_module": {
+            "path": {
+                "value": "Path",
+                "is_user_defined": false
+            }
+        },
+        "_is_package": {
+            "path": {
+                "value": "Path",
+                "is_user_defined": false
+            }
+        },
+        "_is_namespace_package": {
+            "path": {
+                "value": "Path",
+                "is_user_defined": false
+            },
+            "src_extensions": {
+                "value": "FrozenSet[str]",
+                "is_user_defined": false
+            }
+        },
+        "_src_path_is_module": {
+            "src_path": {
+                "value": "Path",
+                "is_user_defined": false
+            },
+            "module_name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "isort.profiles": {},
+    "isort.pylama_isort": {
+        "supress_stdout": {},
+        "Linter.allow": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Linter.run": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "meta": {
+                "value": "Any",
+                "is_user_defined": false
+            }
+        }
+    },
+    "isort.sections": {},
+    "isort.settings": {
+        "_get_str_to_type_converter": {
+            "setting_name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_as_list": {
+            "value": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_abspaths": {
+            "cwd": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "values": {
+                "value": "Iterable[str]",
+                "is_user_defined": false
+            }
+        },
+        "_find_config": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_get_config_data": {
+            "file_path": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "sections": {
+                "value": "Tuple[str]",
+                "is_user_defined": false
+            }
+        },
+        "_as_bool": {
+            "value": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_Config.__post_init__": {},
+        "_Config.__hash__": {},
+        "Config.__init__": {
+            "settings_file": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "settings_path": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Optional[_Config]",
+                "is_user_defined": true
+            }
+        },
+        "Config.is_supported_filetype": {
+            "file_name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "Config.is_skipped": {
+            "file_path": {
+                "value": "Path",
+                "is_user_defined": false
+            }
+        },
+        "Config.known_patterns": {},
+        "Config.section_comments": {},
+        "Config.skips": {},
+        "Config.skip_globs": {},
+        "Config._parse_known_pattern": {
+            "pattern": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "isort.setuptools_commands": {
+        "ISortCommand.initialize_options": {},
+        "ISortCommand.finalize_options": {},
+        "ISortCommand.distribution_files": {},
+        "ISortCommand.run": {}
+    },
+    "isort.sorting": {
+        "module_key": {
+            "module_name": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "sub_imports": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "ignore_case": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "section_name": {
+                "value": "Optional[Any]",
+                "is_user_defined": false
+            },
+            "straight_import": {
+                "value": "Optional[bool]",
+                "is_user_defined": false
+            }
+        },
+        "section_key": {
+            "line": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            }
+        },
+        "naturally": {
+            "to_sort": {
+                "value": "Iterable[str]",
+                "is_user_defined": false
+            },
+            "key": {
+                "value": "Optional[Callable[[str], Any]]",
+                "is_user_defined": false
+            },
+            "reverse": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "_atoi": {
+            "text": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_natural_keys": {
+            "text": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "key_callback": {
+            "text": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "isort.utils": {
+        "exists_case_sensitive": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "isort.wrap": {
+        "import_statement": {
+            "import_start": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "from_imports": {
+                "value": "List[str]",
+                "is_user_defined": false
+            },
+            "comments": {
+                "value": "Sequence[str]",
+                "is_user_defined": false
+            },
+            "line_separator": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "multi_line_output": {
+                "value": "Optional[Modes]",
+                "is_user_defined": false
+            }
+        },
+        "line": {
+            "content": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "line_separator": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            }
+        }
+    },
+    "isort.wrap_modes": {
+        "from_string": {
+            "value": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "formatter_from_string": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "_wrap_mode_interface": {
+            "statement": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "imports": {
+                "value": "List[str]",
+                "is_user_defined": false
+            },
+            "white_space": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "indent": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "line_length": {
+                "value": "int",
+                "is_user_defined": false
+            },
+            "comments": {
+                "value": "List[str]",
+                "is_user_defined": false
+            },
+            "line_separator": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "comment_prefix": {
+                "value": "str",
+                "is_user_defined": false
+            },
+            "include_trailing_comma": {
+                "value": "bool",
+                "is_user_defined": false
+            },
+            "remove_comments": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "_wrap_mode": {},
+        "grid": {},
+        "vertical": {},
+        "_hanging_indent_common": {},
+        "hanging_indent": {},
+        "vertical_hanging_indent": {},
+        "_vertical_grid_common": {
+            "need_trailing_char": {
+                "value": "bool",
+                "is_user_defined": false
+            }
+        },
+        "vertical_grid": {},
+        "vertical_grid_grouped": {},
+        "vertical_grid_grouped_no_comma": {},
+        "noqa": {},
+        "vertical_hanging_indent_bracket": {},
+        "vertical_prefix_from_module_import": {},
+        "hanging_indent_with_parentheses": {},
+        "backslash_grid": {},
+        "_hanging_indent_common.end_line": {}
+    },
+    "isort._version": {},
+    "isort": {},
+    "isort.__main__": {},
+    "isort.deprecated.finders": {
+        "chdir": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "BaseFinder.__init__": {
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            }
+        },
+        "BaseFinder.find": {
+            "module_name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "ForcedSeparateFinder.find": {
+            "module_name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "LocalFinder.find": {
+            "module_name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "KnownPatternFinder.__init__": {
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            }
+        },
+        "KnownPatternFinder._parse_known_pattern": {
+            "pattern": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "KnownPatternFinder.find": {
+            "module_name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "PathFinder.__init__": {
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "PathFinder.find": {
+            "module_name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "ReqsBaseFinder.__init__": {
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "ReqsBaseFinder._get_names": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "ReqsBaseFinder._get_files_from_dir": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "ReqsBaseFinder._load_mapping": {},
+        "ReqsBaseFinder._load_names": {},
+        "ReqsBaseFinder._get_parents": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "ReqsBaseFinder._get_files": {},
+        "ReqsBaseFinder._normalize_name": {
+            "name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "ReqsBaseFinder.find": {
+            "module_name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "RequirementsFinder._get_files_from_dir": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "RequirementsFinder._get_files_from_dir_cached": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "RequirementsFinder._get_names": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "RequirementsFinder._get_names_cached": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "PipfileFinder._get_names": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "PipfileFinder._get_files_from_dir": {
+            "path": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "DefaultFinder.find": {
+            "module_name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        },
+        "FindersManager.__init__": {
+            "config": {
+                "value": "Config",
+                "is_user_defined": true
+            },
+            "finder_classes": {
+                "value": "Optional[Iterable[Type[BaseFinder]]]",
+                "is_user_defined": true
+            }
+        },
+        "FindersManager.find": {
+            "module_name": {
+                "value": "str",
+                "is_user_defined": false
+            }
+        }
+    },
+    "isort.deprecated": {},
+    "isort.stdlibs.all": {},
+    "isort.stdlibs.py2": {},
+    "isort.stdlibs.py27": {},
+    "isort.stdlibs.py3": {},
+    "isort.stdlibs.py35": {},
+    "isort.stdlibs.py36": {},
+    "isort.stdlibs.py37": {},
+    "isort.stdlibs.py38": {},
+    "isort.stdlibs.py39": {},
+    "isort.stdlibs": {},
+    "isort._future._dataclasses": {
+        "field": {},
+        "_tuple_str": {},
+        "_create_fn": {},
+        "_field_assign": {},
+        "_field_init": {},
+        "_init_param": {},
+        "_init_fn": {},
+        "_repr_fn": {},
+        "_frozen_get_del_attr": {},
+        "_cmp_fn": {},
+        "_hash_fn": {},
+        "_is_classvar": {},
+        "_is_initvar": {},
+        "_is_type": {},
+        "_get_field": {},
+        "_set_new_attribute": {},
+        "_hash_set_none": {},
+        "_hash_add": {},
+        "_hash_exception": {},
+        "_process_class": {},
+        "dataclass": {},
+        "fields": {},
+        "_is_dataclass_instance": {},
+        "is_dataclass": {},
+        "asdict": {},
+        "_asdict_inner": {},
+        "astuple": {},
+        "_astuple_inner": {},
+        "make_dataclass": {},
+        "replace": {},
+        "_HAS_DEFAULT_FACTORY_CLASS.__repr__": {},
+        "_FIELD_BASE.__init__": {},
+        "_FIELD_BASE.__repr__": {},
+        "_InitVarMeta.__getitem__": {},
+        "Field.__init__": {},
+        "Field.__repr__": {},
+        "Field.__set_name__": {},
+        "_DataclassParams.__init__": {},
+        "_DataclassParams.__repr__": {},
+        "dataclass.wrap": {}
+    },
+    "isort._future": {},
+    "isort._vendored.toml.decoder": {
+        "_detect_pathlib_path": {},
+        "_ispath": {},
+        "_getpath": {},
+        "_strictly_valid_num": {},
+        "load": {},
+        "loads": {},
+        "_load_date": {},
+        "_load_unicode_escapes": {},
+        "_unescape": {},
+        "TomlDecodeError.__init__": {},
+        "CommentValue.__init__": {},
+        "CommentValue.__getitem__": {},
+        "CommentValue.__setitem__": {},
+        "CommentValue.dump": {},
+        "TomlDecoder.__init__": {},
+        "TomlDecoder.get_empty_table": {},
+        "TomlDecoder.get_empty_inline_table": {},
+        "TomlDecoder.load_inline_object": {},
+        "TomlDecoder._get_split_on_quotes": {},
+        "TomlDecoder.load_line": {},
+        "TomlDecoder._load_line_multiline_str": {},
+        "TomlDecoder.load_value": {},
+        "TomlDecoder.bounded_string": {},
+        "TomlDecoder._load_array_isstrarray": {},
+        "TomlDecoder.load_array": {},
+        "TomlDecoder.preserve_comment": {},
+        "TomlDecoder.embed_comments": {},
+        "TomlPreserveCommentDecoder.__init__": {},
+        "TomlPreserveCommentDecoder.preserve_comment": {},
+        "TomlPreserveCommentDecoder.embed_comments": {}
+    },
+    "isort._vendored.toml.encoder": {
+        "dump": {},
+        "dumps": {},
+        "_dump_str": {},
+        "_dump_float": {},
+        "_dump_time": {},
+        "TomlEncoder.__init__": {},
+        "TomlEncoder.get_empty_table": {},
+        "TomlEncoder.dump_list": {},
+        "TomlEncoder.dump_inline_table": {},
+        "TomlEncoder.dump_value": {},
+        "TomlEncoder.dump_sections": {},
+        "TomlPreserveInlineDictEncoder.__init__": {},
+        "TomlArraySeparatorEncoder.__init__": {},
+        "TomlArraySeparatorEncoder.dump_list": {},
+        "TomlNumpyEncoder.__init__": {},
+        "TomlNumpyEncoder._dump_int": {},
+        "TomlPreserveCommentEncoder.__init__": {},
+        "TomlPathlibEncoder._dump_pathlib_path": {},
+        "TomlPathlibEncoder.dump_value": {}
+    },
+    "isort._vendored.toml.ordered": {
+        "TomlOrderedDecoder.__init__": {},
+        "TomlOrderedEncoder.__init__": {}
+    },
+    "isort._vendored.toml.tz": {
+        "TomlTz.__init__": {},
+        "TomlTz.tzname": {},
+        "TomlTz.utcoffset": {},
+        "TomlTz.dst": {}
+    },
+    "isort._vendored.toml": {}
+}
