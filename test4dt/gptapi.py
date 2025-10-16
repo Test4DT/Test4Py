@@ -43,8 +43,6 @@ class MyGPT:
                 stream=False
             )
             output = chat.choices[0].message.content
-            logging.error(messages)
-            logging.error(output)
             self.count += 1
         except BaseException as e:
             logging.error(e)

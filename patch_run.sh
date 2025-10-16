@@ -1,1 +1,1 @@
-python -m test4dt.start --project_path /mnt/c/Users/34203/Desktop/typesystem --source_path typesystem
+python -m test4dt.start --project_path /mnt/c/Users/34203/Desktop/expirements/pytLMtester/PyCG --source_path pycg

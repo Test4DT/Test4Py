@@ -19,13 +19,17 @@ class TestManager:
         self.count = 0
         self.coverage = None
 
-    def get_directory(self, dir_type):
+    def get_test_path(self):
         root_dir = self.func.file.root_dir
         file_path = self.func.file.file_path
         directory = file_path[0:-3] + '_t'
         dirs = directory.split(os.path.sep)
         dirs = dirs[len(root_dir.split(os.path.sep)):]
-        return root_dir + os.path.sep + dir_type + os.path.sep + "_".join(dirs)
+        return self.directory + os.path.sep + 'test_' + "_".join(dirs) + self.func.func_name.replace('.', '_') + str(len(self.testcases)) + '.py'
+
+    def get_directory(self, dir_type):
+        root_dir = self.func.file.root_dir
+        return root_dir + os.path.sep + dir_type
 
     def init_test_single_path(self):
         if not os.path.exists(self.directory):
@@ -38,7 +42,7 @@ class TestManager:
         if self.coverage is not None:
             if len(self.coverage.missing_lines) == 0:
                 return
-        test_path = self.directory + os.path.sep + 'test_' + self.func.func_name.replace('.', '_') + str(len(self.testcases)) + '.py'
+        test_path = self.get_test_path()
         await self.func.judge_params()
         if self.get_first_testcase() != "" and self.coverage is not None:
             code = await self.generate_test_case_evol()
