@@ -4,6 +4,6 @@ without-cg :  line_coverage:  0.8363804369348558    branch_coverage:  0.72625200
 Pyn
 with-cg :  line_coverage:  0.8760346124905944    branch_coverage:  0.7856582046584664
 without-cg :  line_coverage:  0.8631489841986456    branch_coverage:  0.7634127191834599
-DT
+NA
 with-cg :  line_coverage:  0.7908829387032529    branch_coverage:  0.647486033519553
 without-cg :  line_coverage:  0.773401194954636    branch_coverage:  0.646927374301676

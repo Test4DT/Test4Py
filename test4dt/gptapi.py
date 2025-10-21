@@ -13,6 +13,8 @@ class MyGPT:
         load_dotenv()
         self.openai_api_key = os.getenv('OPENAI_API_KEY')
         self.openai_api_base = os.getenv('OPENAI_API_BASE')
+        if os.getenv('MODEL'):
+            model_type = os.getenv('MODEL')
         self.temperature = temperature
         self.limiter = AsyncLimiter(max_rate=max_rate, time_period=time_period)
         self.model_type = model_type
